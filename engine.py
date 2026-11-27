@@ -71,6 +71,11 @@ def main():
         action="store_true",
         help="search the whole book chunks (data/book_chunks.json) instead of the technique cards",
     )
+    parser.add_argument(
+        "--sector",
+        default=None,
+        help="route the search to one sector (e.g. 01-traditional-satanism)",
+    )
     args = parser.parse_args()
 
     session = load_session(MODELS[args.model])
@@ -91,6 +96,11 @@ def main():
 
     with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:
         corpus = json.load(f)
+    if args.sector:
+        corpus = [c for c in corpus if c.get("sector") == args.sector]
+        if not corpus:
+            print(f"no techniques routed to sector {args.sector}")
+            return 1
 
     docs = [f"{item['title']}. {item['text']}" for item in corpus]
     doc_vecs = embed(session, docs)

@@ -35,7 +35,7 @@ def main():
     mapped = set()
     for p in practices["phases"]:
         mapped |= set(p["chunks"])
-    check("every chunk is mapped or declared", mapped | {17, 18, 19} == chunk_ids)
+    check("every chunk is mapped or declared", mapped | set(practices["coverage"]["chunks_language_layer"]) == chunk_ids)
     check("exercises are marked derived", all(e["derived"] for e in practices["exercises"]))
     check("gaps registry is non-empty", len(practices["gaps"]) >= 1)
     print(f"{7 - failures}/7 structure checks pass")
