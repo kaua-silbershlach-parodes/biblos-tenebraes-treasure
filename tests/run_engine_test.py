@@ -22,6 +22,9 @@ CASES = [
     ("what should be studied before the rite begins", "bt-10"),
     ("why use a sacred language for the central invocation", "bt-11"),
     ("how does the rite close with gratitude", "bt-12"),
+    ("should participants enter the space one at a time", "bt-13"),
+    ("why separate the participants before the closing", "bt-14"),
+    ("how should the working space be lit", "bt-15"),
 ]
 
 
