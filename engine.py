@@ -66,18 +66,34 @@ def main():
         help="e5 (multilingual, default) or minilm (English-first)",
     )
     parser.add_argument("--top", type=int, default=3, help="how many results to print")
+    parser.add_argument(
+        "--book",
+        action="store_true",
+        help="search the whole book chunks (data/book_chunks.json) instead of the technique cards",
+    )
     args = parser.parse_args()
+
+    session = load_session(MODELS[args.model])
+    query_vec = embed(session, [args.query])[0]
+    query_vec = query_vec / np.linalg.norm(query_vec)
+
+    if args.book:
+        with open(os.path.join(ROOT, "data", "book_chunks.json"), encoding="utf-8") as f:
+            chunks = json.load(f)
+        doc_vecs = embed(session, [c["text"] for c in chunks])
+        doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
+        scores = doc_vecs @ query_vec
+        order = np.argsort(-scores)[: args.top]
+        for rank, idx in enumerate(order, 1):
+            c = chunks[idx]
+            print(f"{rank}. [chunk {c['id']} · page {c['page']}] {scores[idx]:.3f}")
+        return 0
 
     with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:
         corpus = json.load(f)
 
-    session = load_session(MODELS[args.model])
     docs = [f"{item['title']}. {item['text']}" for item in corpus]
     doc_vecs = embed(session, docs)
-    query_vec = embed(session, [args.query])[0]
-
-    doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
-    query_vec = query_vec / np.linalg.norm(query_vec)
     scores = doc_vecs @ query_vec
 
     order = np.argsort(-scores)[: args.top]
