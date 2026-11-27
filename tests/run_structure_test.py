@@ -12,6 +12,7 @@ def main():
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
     sector_tree = json.load(open(os.path.join(ROOT, "data", "sector_tree.json")))
+    library_metrics = json.load(open(os.path.join(ROOT, "data", "library_metrics.json")))
     failures = 0
 
     def check(name, ok):
@@ -56,7 +57,22 @@ def main():
     ))
     check("book 1 leaf folder is in the sector tree",
           "sectors/01-traditional-satanism/Demonologia/Lilith" in tree_paths)
-    print(f"{10 - failures}/10 structure checks pass")
+    totals = library_metrics["totals"]
+    check("library metrics totals reconcile", (
+        totals["entries"] == 17927 and totals["pdfs"] == 626
+        and totals["pdf_text"] + totals["pdf_scanned"] + totals["pdf_unreadable"] == 626
+        and sum(s["entries"] for s in library_metrics["sectors"].values()) + 2 == 17927
+    ))
+    check("directory accounting reconciles", (
+        totals["directories"] == 7 + totals["materialized_subfolders"]
+        + library_metrics["kinds"]["mirror"]["dirs"]
+        + library_metrics["kinds"]["generated"]["dirs"]
+    ))
+    check("service levels are measured", (
+        library_metrics["service_levels"]["availability_target_percent"] == 99.9
+        and library_metrics["service_levels"]["measured_baseline"]["engine_test_result"] == "30/30"
+    ))
+    print(f"{13 - failures}/13 structure checks pass")
     return 0 if failures == 0 else 1
 
 

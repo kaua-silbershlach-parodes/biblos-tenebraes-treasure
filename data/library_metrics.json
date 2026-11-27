@@ -1,0 +1,629 @@
+{
+  "measured_on": "2026-11-27",
+  "totals": {
+    "entries": 17927,
+    "bytes": 3719220726,
+    "directories": 3762,
+    "materialized_subfolders": 136,
+    "max_directory_depth": 14,
+    "pdfs": 626,
+    "pdf_pages": 65325,
+    "pdf_text": 551,
+    "pdf_scanned": 74,
+    "pdf_unreadable": 1
+  },
+  "sectors": {
+    "05-basic-books": {
+      "source_folder": "0. Livros Básicos",
+      "entries": 11,
+      "bytes": 6052823,
+      "dirs_by_depth": {
+        "1": 1
+      },
+      "materialized_dirs": 0,
+      "mirror_dirs": 0,
+      "generated_dirs": 0,
+      "max_depth": 1,
+      "extensions": {
+        ".pdf": 7,
+        ".lnk": 3,
+        ".docx": 1
+      },
+      "book_formats": {
+        ".pdf": 7,
+        ".docx": 1
+      },
+      "pdf": {
+        "count": 7,
+        "bytes": 5705839,
+        "pages": 668,
+        "text": 7,
+        "scanned": 0,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 278583,
+          "median": 706492,
+          "p90": 1199407,
+          "max": 1616508
+        },
+        "page_percentiles": {
+          "min": 9,
+          "median": 89,
+          "p90": 161,
+          "max": 194
+        }
+      }
+    },
+    "01-traditional-satanism": {
+      "source_folder": "1. Satanismo Tradicional (base)",
+      "entries": 177,
+      "bytes": 973253889,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 19,
+        "3": 8
+      },
+      "materialized_dirs": 27,
+      "mirror_dirs": 0,
+      "generated_dirs": 0,
+      "max_depth": 3,
+      "extensions": {
+        ".pdf": 164,
+        ".epub": 4,
+        ".docx": 3,
+        ".txt": 3,
+        ".url": 3
+      },
+      "book_formats": {
+        ".pdf": 164,
+        ".epub": 4,
+        ".docx": 3,
+        ".txt": 3
+      },
+      "pdf": {
+        "count": 164,
+        "bytes": 966390513,
+        "pages": 19652,
+        "text": 137,
+        "scanned": 27,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 8668,
+          "median": 831915,
+          "p90": 4758168,
+          "max": 507503946
+        },
+        "page_percentiles": {
+          "min": 1,
+          "median": 56,
+          "p90": 260,
+          "max": 1044
+        }
+      }
+    },
+    "02-luciferianism": {
+      "source_folder": "2. Luciferianismo (caminho da luz)",
+      "entries": 107,
+      "bytes": 323233296,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 23,
+        "3": 1,
+        "4": 1
+      },
+      "materialized_dirs": 25,
+      "mirror_dirs": 0,
+      "generated_dirs": 0,
+      "max_depth": 4,
+      "extensions": {
+        ".pdf": 80,
+        ".lnk": 11,
+        ".txt": 8,
+        ".url": 4,
+        ".jpg": 3,
+        ".epub": 1
+      },
+      "book_formats": {
+        ".pdf": 80,
+        ".txt": 8,
+        ".epub": 1
+      },
+      "pdf": {
+        "count": 80,
+        "bytes": 322566556,
+        "pages": 11539,
+        "text": 74,
+        "scanned": 6,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 51311,
+          "median": 975246,
+          "p90": 13055503,
+          "max": 65430284
+        },
+        "page_percentiles": {
+          "min": 1,
+          "median": 61,
+          "p90": 314,
+          "max": 1258
+        }
+      }
+    },
+    "03-modern-satanism": {
+      "source_folder": "3. Satanismo Moderno (Caminh do Meio)",
+      "entries": 16406,
+      "bytes": 1163437531,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 15,
+        "3": 8,
+        "4": 8,
+        "5": 1,
+        "6": 18,
+        "7": 54,
+        "8": 354,
+        "9": 2135,
+        "10": 845,
+        "11": 42,
+        "12": 8,
+        "13": 1,
+        "14": 1
+      },
+      "materialized_dirs": 30,
+      "mirror_dirs": 3460,
+      "generated_dirs": 0,
+      "max_depth": 14,
+      "extensions": {
+        ".z": 6454,
+        ".html": 6399,
+        ".jpg": 2134,
+        ".png": 603,
+        ".gif": 471,
+        ".pdf": 139,
+        "(none)": 84,
+        ".txt": 34,
+        ".js": 20,
+        ".css": 14,
+        ".mp3": 14,
+        ".rtf": 9
+      },
+      "book_formats": {
+        ".pdf": 139,
+        ".txt": 34,
+        ".rtf": 9,
+        ".docx": 5,
+        ".doc": 1
+      },
+      "pdf": {
+        "count": 139,
+        "bytes": 518752196,
+        "pages": 12570,
+        "text": 126,
+        "scanned": 12,
+        "unreadable": 1,
+        "size_percentiles": {
+          "min": 0,
+          "median": 870600,
+          "p90": 5633443,
+          "max": 137976375
+        },
+        "page_percentiles": {
+          "min": 0,
+          "median": 48,
+          "p90": 230,
+          "max": 1106
+        }
+      }
+    },
+    "04-post-modern-satanism": {
+      "source_folder": "4. Satanismo Pós Moderno (via sinistra)",
+      "entries": 225,
+      "bytes": 517207752,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 17,
+        "3": 16,
+        "4": 10
+      },
+      "materialized_dirs": 43,
+      "mirror_dirs": 0,
+      "generated_dirs": 0,
+      "max_depth": 4,
+      "extensions": {
+        ".pdf": 151,
+        ".jfif": 40,
+        ".jpg": 15,
+        ".txt": 9,
+        ".docx": 5,
+        ".url": 4,
+        ".xlsx": 1
+      },
+      "book_formats": {
+        ".pdf": 151,
+        ".txt": 9,
+        ".docx": 5
+      },
+      "pdf": {
+        "count": 151,
+        "bytes": 499992737,
+        "pages": 9449,
+        "text": 133,
+        "scanned": 18,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 19265,
+          "median": 984962,
+          "p90": 5063881,
+          "max": 56375841
+        },
+        "page_percentiles": {
+          "min": 1,
+          "median": 13,
+          "p90": 174,
+          "max": 1460
+        }
+      }
+    },
+    "06-magazines": {
+      "source_folder": "Magazines e Revistas",
+      "entries": 240,
+      "bytes": 244626058,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 6,
+        "3": 2,
+        "4": 8,
+        "5": 88,
+        "6": 7
+      },
+      "materialized_dirs": 6,
+      "mirror_dirs": 0,
+      "generated_dirs": 105,
+      "max_depth": 6,
+      "extensions": {
+        ".json": 179,
+        ".png": 26,
+        ".pdf": 25,
+        ".md": 8,
+        ".lock": 1,
+        ".sqlite3": 1
+      },
+      "book_formats": {
+        ".pdf": 25
+      },
+      "pdf": {
+        "count": 25,
+        "bytes": 236852555,
+        "pages": 2088,
+        "text": 23,
+        "scanned": 2,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 413817,
+          "median": 4510461,
+          "p90": 29025042,
+          "max": 39906530
+        },
+        "page_percentiles": {
+          "min": 12,
+          "median": 60,
+          "p90": 108,
+          "max": 652
+        }
+      }
+    },
+    "07-to-organize": {
+      "source_folder": "Organizar",
+      "entries": 759,
+      "bytes": 487557948,
+      "dirs_by_depth": {
+        "1": 1,
+        "2": 4,
+        "3": 2,
+        "4": 2,
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 45
+      },
+      "materialized_dirs": 5,
+      "mirror_dirs": 0,
+      "generated_dirs": 54,
+      "max_depth": 8,
+      "extensions": {
+        ".png": 586,
+        ".json": 91,
+        ".pdf": 60,
+        ".rtf": 9,
+        ".url": 4,
+        ".lock": 2,
+        ".md": 2,
+        ".cmd": 1,
+        ".epub": 1,
+        ".log": 1,
+        ".sqlite3": 1,
+        ".txt": 1
+      },
+      "book_formats": {
+        ".pdf": 60,
+        ".rtf": 9,
+        ".epub": 1,
+        ".txt": 1
+      },
+      "pdf": {
+        "count": 60,
+        "bytes": 293644566,
+        "pages": 9359,
+        "text": 51,
+        "scanned": 9,
+        "unreadable": 0,
+        "size_percentiles": {
+          "min": 23984,
+          "median": 1398440,
+          "p90": 12744608,
+          "max": 45744921
+        },
+        "page_percentiles": {
+          "min": 2,
+          "median": 127,
+          "p90": 290,
+          "max": 1119
+        }
+      }
+    }
+  },
+  "kinds": {
+    "library": {
+      "entries": 800,
+      "bytes": 3132382455,
+      "dirs": 143,
+      "max_depth": 5
+    },
+    "mirror": {
+      "entries": 16234,
+      "bytes": 383309409,
+      "dirs": 3460,
+      "max_depth": 15
+    },
+    "generated": {
+      "entries": 891,
+      "bytes": 199677433,
+      "dirs": 159,
+      "max_depth": 9
+    },
+    "root": {
+      "entries": 2,
+      "bytes": 3851429,
+      "dirs": 0,
+      "max_depth": 1
+    }
+  },
+  "directory_depth": [
+    {
+      "directory_depth": 0,
+      "directories": 0,
+      "entries": 2,
+      "bytes": 3851429,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 1,
+      "directories": 7,
+      "entries": 82,
+      "bytes": 298906622,
+      "pdfs": 67
+    },
+    {
+      "directory_depth": 2,
+      "directories": 84,
+      "entries": 481,
+      "bytes": 2119155019,
+      "pdfs": 406
+    },
+    {
+      "directory_depth": 3,
+      "directories": 37,
+      "entries": 173,
+      "bytes": 654440762,
+      "pdfs": 117
+    },
+    {
+      "directory_depth": 4,
+      "directories": 29,
+      "entries": 74,
+      "bytes": 64624571,
+      "pdfs": 25
+    },
+    {
+      "directory_depth": 5,
+      "directories": 90,
+      "entries": 107,
+      "bytes": 3514149,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 6,
+      "directories": 27,
+      "entries": 579,
+      "bytes": 68872805,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 7,
+      "directories": 57,
+      "entries": 1705,
+      "bytes": 204876614,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 8,
+      "directories": 399,
+      "entries": 5972,
+      "bytes": 140856546,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 9,
+      "directories": 2135,
+      "entries": 7576,
+      "bytes": 122995423,
+      "pdfs": 1
+    },
+    {
+      "directory_depth": 10,
+      "directories": 845,
+      "entries": 1120,
+      "bytes": 34234283,
+      "pdfs": 8
+    },
+    {
+      "directory_depth": 11,
+      "directories": 42,
+      "entries": 36,
+      "bytes": 2851035,
+      "pdfs": 2
+    },
+    {
+      "directory_depth": 12,
+      "directories": 8,
+      "entries": 7,
+      "bytes": 41468,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 13,
+      "directories": 1,
+      "entries": 0,
+      "bytes": 0,
+      "pdfs": 0
+    },
+    {
+      "directory_depth": 14,
+      "directories": 1,
+      "entries": 13,
+      "bytes": 0,
+      "pdfs": 0
+    }
+  ],
+  "extensions": {
+    "counts": {
+      ".z": 6454,
+      ".html": 6399,
+      ".jpg": 2152,
+      ".png": 1215,
+      ".pdf": 626,
+      ".gif": 471,
+      ".json": 270,
+      "(none)": 84,
+      ".txt": 57,
+      ".jfif": 40,
+      ".js": 20,
+      ".url": 18,
+      ".rtf": 18,
+      ".lnk": 15,
+      ".docx": 14,
+      ".mp3": 14,
+      ".css": 14,
+      ".md": 10,
+      ".epub": 6,
+      ".zip": 6
+    },
+    "bytes": {
+      ".pdf": 2843904962,
+      ".zip": 332472406,
+      ".png": 202645122,
+      ".html": 146747294,
+      ".z": 80823883,
+      ".jpg": 28749672,
+      ".txt": 19354016,
+      ".mp3": 14844348,
+      ".docx": 13338512,
+      ".gif": 7458930,
+      ".jfif": 6839584,
+      ".epub": 4558731,
+      ".exe": 4513224,
+      ".json": 3096371,
+      ".rtf": 2202756,
+      ".lst": 1928540,
+      ".wma": 1793313,
+      ".md": 1598552,
+      ".bmp": 726008,
+      ".js": 477184
+    }
+  },
+  "name_metrics": {
+    "filename_length": {
+      "min": 3,
+      "median": 17,
+      "p90": 44,
+      "max": 137
+    },
+    "book_filename_length": {
+      "min": 5,
+      "median": 33,
+      "p90": 59,
+      "max": 105
+    },
+    "path_length": {
+      "min": 16,
+      "median": 160,
+      "p90": 191,
+      "max": 290
+    }
+  },
+  "service_levels": {
+    "measurement_window": "calendar month",
+    "availability_target_percent": 99.9,
+    "availability_definition": "Successful engine queries divided by attempted engine queries, excluding scheduled maintenance and source-library unavailability.",
+    "response_definition": "Time from a valid request to the first returned result or ticket acknowledgement.",
+    "resolution_definition": "Time from a valid request to the verified fix, re-run control, or published correction.",
+    "priorities": [
+      {
+        "priority": "Emergency",
+        "response": "30 minutes",
+        "resolution": "as soon as possible"
+      },
+      {
+        "priority": "Immediate",
+        "response": "30 minutes",
+        "resolution": "before end of current business day"
+      },
+      {
+        "priority": "Urgent",
+        "response": "30 minutes",
+        "resolution": "before start of next business day"
+      },
+      {
+        "priority": "Routine",
+        "response": "30 minutes",
+        "resolution": "before end of next business day"
+      },
+      {
+        "priority": "Schedule",
+        "response": "30 minutes",
+        "resolution": "within 3 business days"
+      }
+    ],
+    "measured_baseline": {
+      "cold_query_seconds_median": 2.137,
+      "cold_query_seconds_max": 2.423,
+      "cold_queries_measured": 5,
+      "engine_test_seconds": 4.098,
+      "engine_test_result": "30/30",
+      "reading_control_seconds": 11.843,
+      "reading_control_result": "PASS",
+      "structure_test_seconds": 0.11,
+      "structure_test_result": "13/13",
+      "progress_test_seconds": 0.051,
+      "progress_test_result": "6/6"
+    },
+    "exclusions": [
+      "scheduled maintenance",
+      "source library unavailable",
+      "scanned PDFs pending OCR",
+      "unreadable PDFs pending repair",
+      "generated cache/record directories and website-mirror internals, measured as archive metrics rather than book subfolders"
+    ],
+    "remediation": "A failed reading control blocks publication; the last verified tree and dump remain the rollback point; metrics are restated after every library change."
+  }
+}

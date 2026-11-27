@@ -109,12 +109,6 @@ but are not materialized as book subfolders.
 **To organize**:
 - `Curiosidades / Hist` — 1 entry
 
-### Counted but not materialized
-
-- 03-modern-satanism · `Morbitvs Vividvs/Morte Súbita Inc` — 3,460 directories. Counted in the sector entries, but not book subfolders.
-- 06-magazines · `Lucifer Luciferax/ocr_cache and Lucifer Luciferax/records` — 105 directories. Processing artifacts, not library subfolders.
-- 07-to-organize · `Auto Ajuda e Melhoria Pessoal/_pdf2md` — 54 directories. Processing artifacts, not library subfolders.
-
 ## Book locations
 
 | Book | Sector | Subfolder path | Repository folder | Entries in leaf subfolder |
@@ -123,6 +117,103 @@ but are not materialized as book subfolders.
 
 Demonologia holds 60 entries in total; Lilith, the leaf subfolder of
 Book 1, holds 17.
+
+## Library metrics
+
+The full library was measured recursively: every directory, every
+entry, every PDF page count, and every file size. Book names are not
+published; size, page, type, depth, and path metrics are published as
+aggregates. The machine-readable measurement is
+`data/library_metrics.json`.
+
+**Library total**: 17,927 entries · 3,719.2 MB · 3,762 directories · maximum directory depth 14 (sector root = depth 1).
+
+| Sector | Entries | Size | PDFs | PDF pages | Text | Scanned | Unreadable | Materialized dirs | Mirror dirs | Generated dirs | Max depth |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Traditional Satanism (base) | 177 | 973.3 MB | 164 | 19,652 | 137 | 27 | 0 | 27 | 0 | 0 | 3 |
+| Luciferianism (path of light) | 107 | 323.2 MB | 80 | 11,539 | 74 | 6 | 0 | 25 | 0 | 0 | 4 |
+| Modern Satanism (middle path) | 16,406 | 1,163.4 MB | 139 | 12,570 | 126 | 12 | 1 | 30 | 3,460 | 0 | 14 |
+| Post-modern Satanism (sinister path) | 225 | 517.2 MB | 151 | 9,449 | 133 | 18 | 0 | 43 | 0 | 0 | 4 |
+| Basic books | 11 | 6.1 MB | 7 | 668 | 7 | 0 | 0 | 0 | 0 | 0 | 1 |
+| Magazines | 240 | 244.6 MB | 25 | 2,088 | 23 | 2 | 0 | 6 | 0 | 105 | 6 |
+| To organize | 759 | 487.6 MB | 60 | 9,359 | 51 | 9 | 0 | 5 | 0 | 54 | 8 |
+| **Library total** | **17,927** | **3,719.2 MB** | **626** | **65,325** | **551** | **74** | **1** | **136** | **3,460** | **159** | **14** |
+
+Directory accounting: 3,762 directories = 7 sector roots + 136
+materialized library subfolders + 3,460 website-mirror archive
+directories + 159 generated cache/record directories. The mirror and
+generated directories are measured here and in
+`data/library_metrics.json`; they are not book subfolders, so they are
+not materialized as sector folders.
+
+### Directory depth
+
+| Directory depth | Directories | Entries in directories at this depth | Size | PDFs |
+| ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 2 | 3.9 MB | 0 |
+| 1 | 7 | 82 | 298.9 MB | 67 |
+| 2 | 84 | 481 | 2,119.2 MB | 406 |
+| 3 | 37 | 173 | 654.4 MB | 117 |
+| 4 | 29 | 74 | 64.6 MB | 25 |
+| 5 | 90 | 107 | 3.5 MB | 0 |
+| 6 | 27 | 579 | 68.9 MB | 0 |
+| 7 | 57 | 1,705 | 204.9 MB | 0 |
+| 8 | 399 | 5,972 | 140.9 MB | 0 |
+| 9 | 2,135 | 7,576 | 123.0 MB | 1 |
+| 10 | 845 | 1,120 | 34.2 MB | 8 |
+| 11 | 42 | 36 | 2.9 MB | 2 |
+| 12 | 8 | 7 | 0.0 MB | 0 |
+| 13 | 1 | 0 | 0.0 MB | 0 |
+| 14 | 1 | 13 | 0.0 MB | 0 |
+
+### Book size metrics
+
+PDF size and page percentiles are measured per sector. Names remain
+unpublished; only the size distribution is shown.
+
+| Sector | PDF size median | PDF size p90 | PDF size max | Pages median | Pages p90 | Pages max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Traditional Satanism (base) | 0.8 MB | 4.8 MB | 507.5 MB | 56 | 260 | 1,044 |
+| Luciferianism (path of light) | 1.0 MB | 13.1 MB | 65.4 MB | 61 | 314 | 1,258 |
+| Modern Satanism (middle path) | 0.9 MB | 5.6 MB | 138.0 MB | 48 | 230 | 1,106 |
+| Post-modern Satanism (sinister path) | 1.0 MB | 5.1 MB | 56.4 MB | 13 | 174 | 1,460 |
+| Basic books | 0.7 MB | 1.2 MB | 1.6 MB | 89 | 161 | 194 |
+| Magazines | 4.5 MB | 29.0 MB | 39.9 MB | 60 | 108 | 652 |
+| To organize | 1.4 MB | 12.7 MB | 45.7 MB | 127 | 290 | 1,119 |
+
+Filename-length metrics are also measured without publishing names:
+book-format filename length median 33 characters, p90 59, max 105; full path length median 160, p90 191, max 290.
+
+## Service levels
+
+Service is measured in calendar-month windows. Availability is the
+share of attempted engine queries that return a result, excluding
+scheduled maintenance and source-library unavailability. Response is
+the time to the first returned result or acknowledgement. Resolution
+is the time to the verified fix, re-run control, or published
+correction.
+
+| Priority | Response | Resolution |
+| --- | --- | --- |
+| Emergency | 30 minutes | as soon as possible |
+| Immediate | 30 minutes | before end of current business day |
+| Urgent | 30 minutes | before start of next business day |
+| Routine | 30 minutes | before end of next business day |
+| Schedule | 30 minutes | within 3 business days |
+
+Availability target: **99.9% per calendar month** for the query
+service. Measured baseline on 2026-11-27: cold query median
+**2.137 s**, max **2.423 s** over 5 queries; engine test **30/30** in
+**4.098 s**; reading control **PASS** in **11.843 s**; structure test
+**13/13** in **0.110 s**; progress test **6/6** in **0.051 s**.
+
+Exclusions: scheduled maintenance; source library unavailable;
+scanned PDFs pending OCR; unreadable PDFs pending repair; generated
+cache/record directories and website-mirror internals, which are
+measured as archive metrics rather than book subfolders. A failed
+reading control blocks publication; the last verified tree and dump
+remain the rollback point; metrics are restated after every library
+change.
 
 ## Definitions
 
