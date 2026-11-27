@@ -20,9 +20,12 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 - `db_engine.py` — the database modes: vector search, approximate search,
   hybrid search, model provider, RAG, and REST, against an Oracle AI
   Database.
-- `data/techniques.dmp` — the techniques table as an Oracle Data Pump dump,
-  exported with the embedding vectors already populated, so an import
-  queries immediately.
+- `data/techniques.dmp` — the Oracle Data Pump dump with the embedding
+  vectors already populated, so an import queries immediately. It carries
+  two tables: `techniques` (the derived technique cards) and `book_chunks`
+  (**the whole first book converted**: every chunk of its 3 pages, 22
+  chunks, each with both model vectors), so the complete source is in the
+  dump, not only the derived cards.
 - `tests/run_engine_test.py` — known questions that must rank their
   technique first, under both models.
 
@@ -66,5 +69,9 @@ Its 12 techniques:
   generation: the running Private AI container serves no LLM.
 - The dump round-trips: import restores 12 rows with 12/12 non-null vector
   pairs.
+- Whole-book search: over the 22 chunks of the complete first book, the
+  in-database top-10 equals the local engine's top-10 exactly under
+  MiniLM (4/4 reference queries). Under e5 the top-10 sets agree with
+  small order differences in the middle ranks, from runtime precision.
 
 Copyright (c) A Elite Estrangeira.
