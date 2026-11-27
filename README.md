@@ -28,8 +28,9 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 
 ## Techniques from the first book — sector: Traditional Satanism
 
-The first book read comes from the **Traditional Satanism** sector
-(`sectors/01-traditional-satanism`, 177 entries). Its 12 techniques:
+The first book read comes from the **Traditional Satanism** sector:
+**177 entries in this sector, of 17,927 in the whole library (0.99%)**.
+Its 12 techniques:
 
 **Frame the work**
 
