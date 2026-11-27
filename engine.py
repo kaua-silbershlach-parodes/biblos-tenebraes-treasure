@@ -91,7 +91,7 @@ def main():
         order = np.argsort(-scores)[: args.top]
         for rank, idx in enumerate(order, 1):
             c = chunks[idx]
-            print(f"{rank}. [chunk {c['id']} · page {c['page']}] {scores[idx]:.3f}")
+            print(f"{rank}. [chunk {c['id']} · page {c['page']} · 01-traditional-satanism/Demonologia/Lilith/book-1] {scores[idx]:.3f}")
         return 0
 
     with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:
@@ -108,7 +108,8 @@ def main():
 
     order = np.argsort(-scores)[: args.top]
     for rank, idx in enumerate(order, 1):
-        print(f"{rank}. [{corpus[idx]['id']}] {corpus[idx]['title']} — {scores[idx]:.3f}")
+        item = corpus[idx]
+        print(f"{rank}. [{item['id']}] {item['title']} — {scores[idx]:.3f} · {item['path']}")
     return 0
 
 
