@@ -196,6 +196,23 @@ The second book's techniques, turned on the engine that carries them:
   a top score under 0.35 is printed as a weak match instead of passing
   as a finding.
 
+The ten books, turned on the engine again:
+
+- **Myth Study First / Source-Trail Argument** → routing before
+  retrieval: `--only-book N` narrows the technique search to one book
+  before ranking, and fails closed when nothing is routed there.
+- **Evidence Taxonomy First** → every result carries its evidence tier
+  (strong ≥ 0.80, moderate ≥ 0.50, weak below), not only a weak flag.
+- **Source-Subtraction Audit** → the structure test fingerprints the
+  corpus: no two cards may be near-duplicates (max pair 0.921, gate
+  0.95).
+- **Fragment Inventory and Reassembly** → a missing piece is named, not
+  hidden: a missing chunk file or corpus stops the engine with the
+  missing path printed.
+- **Encoded-Text Reading / Original-versus-Interpolation** → `--both`
+  takes a second reading with the other model and reports whether the
+  two readings agree on the top technique.
+
 ## Verified
 
 - Local engine: 282/282 known questions rank their technique first, under

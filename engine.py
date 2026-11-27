@@ -84,6 +84,14 @@ def embed_cached(session, model_name, texts):
     return vecs
 
 
+def evidence_tier(score):
+    if score >= 0.80:
+        return "strong"
+    if score >= 0.50:
+        return "moderate"
+    return "weak"
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("query", help="the question to match against the techniques")
@@ -116,6 +124,18 @@ def main():
         default=None,
         help="route the search to one sector (e.g. 01-traditional-satanism)",
     )
+    parser.add_argument(
+        "--only-book",
+        type=int,
+        default=None,
+        metavar="N",
+        help="route the technique search to book N only, before ranking",
+    )
+    parser.add_argument(
+        "--both",
+        action="store_true",
+        help="second reading: rank again with the other model and report agreement",
+    )
     args = parser.parse_args()
 
     session = load_session(MODELS[args.model])
@@ -141,7 +161,11 @@ def main():
             return 1
         chunk_file = "book_chunks.json" if book_n == 1 else f"book{book_n}_chunks.json"
         chunk_path = book_paths[book_n]
-        with open(os.path.join(ROOT, "data", chunk_file), encoding="utf-8") as f:
+        chunk_full = os.path.join(ROOT, "data", chunk_file)
+        if not os.path.exists(chunk_full):
+            print(f"missing piece: data/{chunk_file}")
+            return 1
+        with open(chunk_full, encoding="utf-8") as f:
             chunks = json.load(f)
         doc_vecs = embed_cached(session, args.model, [c["text"] for c in chunks])
         doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
@@ -150,16 +174,26 @@ def main():
         for rank, idx in enumerate(order, 1):
             c = chunks[idx]
             print(f"{rank}. [chunk {c['id']} · page {c['page']} · {chunk_path}] {scores[idx]:.3f}")
+        print(f"Evidence: {evidence_tier(scores[order[0]])}")
         if scores[order[0]] < 0.35:
             print("Weak match: the best passage is only loosely related to the question.")
         return 0
 
-    with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:
+    corpus_full = os.path.join(ROOT, "corpus.json")
+    if not os.path.exists(corpus_full):
+        print("missing piece: corpus.json")
+        return 1
+    with open(corpus_full, encoding="utf-8") as f:
         corpus = json.load(f)
     if args.sector:
         corpus = [c for c in corpus if c.get("sector") == args.sector]
         if not corpus:
             print(f"no techniques routed to sector {args.sector}")
+            return 1
+    if args.only_book is not None:
+        corpus = [c for c in corpus if c.get("book") == args.only_book]
+        if not corpus:
+            print(f"no techniques routed to book {args.only_book}")
             return 1
 
     docs = [f"{item['title']}. {item['text']}" for item in corpus]
@@ -171,8 +205,19 @@ def main():
     for rank, idx in enumerate(order, 1):
         item = corpus[idx]
         print(f"{rank}. [{item['id']}] {item['title']} — {scores[idx]:.3f} · {item['path']}")
+    print(f"Evidence: {evidence_tier(scores[order[0]])}")
     if scores[order[0]] < 0.35:
         print("Weak match: the best technique is only loosely related to the question.")
+    if args.both:
+        other = "minilm" if args.model == "e5" else "e5"
+        other_session = load_session(MODELS[other])
+        other_q = embed(other_session, [args.query])[0]
+        other_q = other_q / np.linalg.norm(other_q)
+        other_vecs = embed_cached(other_session, other, docs)
+        other_vecs = other_vecs / np.linalg.norm(other_vecs, axis=1, keepdims=True)
+        other_top = corpus[int(np.argmax(other_vecs @ other_q))]["id"]
+        agrees = "agrees" if other_top == corpus[order[0]]["id"] else "disagrees"
+        print(f"Second reading ({other}): top {other_top} — {agrees}")
     return 0
 
 

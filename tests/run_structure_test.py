@@ -109,7 +109,18 @@ def main():
         and all(a in card_ids and b in card_ids
                 for bridge in crossing["bridges"] for a, b in bridge["pairs"])
     ))
-    print(f"{16 - failures}/16 structure checks pass")
+    sys.path.insert(0, ROOT)
+    from engine import MODELS, embed_cached, load_session  # noqa: E402
+    import numpy as np  # noqa: E402
+
+    session = load_session(MODELS["e5"])
+    vecs = embed_cached(session, "e5", [f"{c['title']}. {c['text']}" for c in corpus])
+    vecs = vecs / np.linalg.norm(vecs, axis=1, keepdims=True)
+    sims = vecs @ vecs.T
+    np.fill_diagonal(sims, 0.0)
+    check("no duplicated card fingerprint", float(sims.max()) < 0.95)
+
+    print(f"{17 - failures}/17 structure checks pass")
     return 0 if failures == 0 else 1
 
 
