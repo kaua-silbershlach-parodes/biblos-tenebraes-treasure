@@ -1,0 +1,920 @@
+{
+  "library_entries": 17927,
+  "sectors": [
+    {
+      "id": "01-traditional-satanism",
+      "label": "Traditional Satanism (base)",
+      "source_folder": "1. Satanismo Tradicional (base)",
+      "entries": 177,
+      "subfolders": [
+        {
+          "name": "Demonologia",
+          "entries": 60,
+          "repo_path": "sectors/01-traditional-satanism/Demonologia",
+          "subfolders": [
+            {
+              "name": "Lilith",
+              "entries": 17,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Lilith",
+              "subfolders": []
+            },
+            {
+              "name": "Mammon",
+              "entries": 9,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Mammon",
+              "subfolders": []
+            },
+            {
+              "name": "Qayn",
+              "entries": 3,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Qayn",
+              "subfolders": []
+            },
+            {
+              "name": "Ars Goethia",
+              "entries": 2,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Ars Goethia",
+              "subfolders": []
+            },
+            {
+              "name": "Astarte",
+              "entries": 1,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Astarte",
+              "subfolders": []
+            },
+            {
+              "name": "Belial",
+              "entries": 1,
+              "repo_path": "sectors/01-traditional-satanism/Demonologia/Belial",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "Magia",
+          "entries": 34,
+          "repo_path": "sectors/01-traditional-satanism/Magia",
+          "subfolders": [
+            {
+              "name": "Baixa Magia",
+              "entries": 1,
+              "repo_path": "sectors/01-traditional-satanism/Magia/Baixa Magia",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "- Outros",
+          "entries": 14,
+          "repo_path": "sectors/01-traditional-satanism/- Outros",
+          "subfolders": []
+        },
+        {
+          "name": "Bruxaria e Esoterismo",
+          "entries": 12,
+          "repo_path": "sectors/01-traditional-satanism/Bruxaria e Esoterismo",
+          "subfolders": []
+        },
+        {
+          "name": "Magia Sexual",
+          "entries": 7,
+          "repo_path": "sectors/01-traditional-satanism/Magia Sexual",
+          "subfolders": []
+        },
+        {
+          "name": "Pactos",
+          "entries": 7,
+          "repo_path": "sectors/01-traditional-satanism/Pactos",
+          "subfolders": []
+        },
+        {
+          "name": "Kabbalah",
+          "entries": 6,
+          "repo_path": "sectors/01-traditional-satanism/Kabbalah",
+          "subfolders": []
+        },
+        {
+          "name": "Rituais",
+          "entries": 6,
+          "repo_path": "sectors/01-traditional-satanism/Rituais",
+          "subfolders": []
+        },
+        {
+          "name": "Egito",
+          "entries": 4,
+          "repo_path": "sectors/01-traditional-satanism/Egito",
+          "subfolders": []
+        },
+        {
+          "name": "Hermetismo",
+          "entries": 4,
+          "repo_path": "sectors/01-traditional-satanism/Hermetismo",
+          "subfolders": []
+        },
+        {
+          "name": "São Cipriano",
+          "entries": 4,
+          "repo_path": "sectors/01-traditional-satanism/São Cipriano",
+          "subfolders": []
+        },
+        {
+          "name": "Divinação",
+          "entries": 3,
+          "repo_path": "sectors/01-traditional-satanism/Divinação",
+          "subfolders": []
+        },
+        {
+          "name": "Babilônia",
+          "entries": 2,
+          "repo_path": "sectors/01-traditional-satanism/Babilônia",
+          "subfolders": []
+        },
+        {
+          "name": "Quimbanda",
+          "entries": 2,
+          "repo_path": "sectors/01-traditional-satanism/Quimbanda",
+          "subfolders": []
+        },
+        {
+          "name": "Sumeria",
+          "entries": 2,
+          "repo_path": "sectors/01-traditional-satanism/Sumeria",
+          "subfolders": [
+            {
+              "name": "Enuma Elish",
+              "entries": 1,
+              "repo_path": "sectors/01-traditional-satanism/Sumeria/Enuma Elish",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "Wicca",
+          "entries": 2,
+          "repo_path": "sectors/01-traditional-satanism/Wicca",
+          "subfolders": []
+        },
+        {
+          "name": "Maçonaria",
+          "entries": 1,
+          "repo_path": "sectors/01-traditional-satanism/Maçonaria",
+          "subfolders": []
+        },
+        {
+          "name": "Mitologia",
+          "entries": 1,
+          "repo_path": "sectors/01-traditional-satanism/Mitologia",
+          "subfolders": []
+        },
+        {
+          "name": "Oráculos",
+          "entries": 1,
+          "repo_path": "sectors/01-traditional-satanism/Oráculos",
+          "subfolders": []
+        }
+      ]
+    },
+    {
+      "id": "02-luciferianism",
+      "label": "Luciferianism (path of light)",
+      "source_folder": "2. Luciferianismo (caminho da luz)",
+      "entries": 107,
+      "subfolders": [
+        {
+          "name": "1986 - A.'.A.'. - Astrum Argentum - Thelema",
+          "entries": 24,
+          "repo_path": "sectors/02-luciferianism/1986 - A.'.A.'. - Astrum Argentum - Thelema",
+          "subfolders": []
+        },
+        {
+          "name": "2003 - Assembly of Light Bearers",
+          "entries": 19,
+          "repo_path": "sectors/02-luciferianism/2003 - Assembly of Light Bearers",
+          "subfolders": [
+            {
+              "name": "Michael W. Ford",
+              "entries": 18,
+              "repo_path": "sectors/02-luciferianism/2003 - Assembly of Light Bearers/Michael W. Ford",
+              "subfolders": [
+                {
+                  "name": "ENG",
+                  "entries": 1,
+                  "repo_path": "sectors/02-luciferianism/2003 - Assembly of Light Bearers/Michael W. Ford/ENG",
+                  "subfolders": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gnosticismo",
+          "entries": 13,
+          "repo_path": "sectors/02-luciferianism/Gnosticismo",
+          "subfolders": []
+        },
+        {
+          "name": "- Outros",
+          "entries": 11,
+          "repo_path": "sectors/02-luciferianism/- Outros",
+          "subfolders": []
+        },
+        {
+          "name": "Maçonaria",
+          "entries": 5,
+          "repo_path": "sectors/02-luciferianism/Maçonaria",
+          "subfolders": []
+        },
+        {
+          "name": "2003 - The Order Of Phospurus",
+          "entries": 4,
+          "repo_path": "sectors/02-luciferianism/2003 - The Order Of Phospurus",
+          "subfolders": []
+        },
+        {
+          "name": "1995 - Iluminattis",
+          "entries": 3,
+          "repo_path": "sectors/02-luciferianism/1995 - Iluminattis",
+          "subfolders": []
+        },
+        {
+          "name": "2005 - Ordo Templi Orientis (O.T.O)",
+          "entries": 3,
+          "repo_path": "sectors/02-luciferianism/2005 - Ordo Templi Orientis (O.T.O)",
+          "subfolders": []
+        },
+        {
+          "name": "1980 - Ordo Saturni",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/1980 - Ordo Saturni",
+          "subfolders": []
+        },
+        {
+          "name": "2001 - Colegiado da Luz Hermética",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2001 - Colegiado da Luz Hermética",
+          "subfolders": []
+        },
+        {
+          "name": "2001 - Hermetismo",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2001 - Hermetismo",
+          "subfolders": []
+        },
+        {
+          "name": "2003 - Black Order of the Dragon",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2003 - Black Order of the Dragon",
+          "subfolders": []
+        },
+        {
+          "name": "2003 - Greater Church of Lucifer (GCOL)",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2003 - Greater Church of Lucifer (GCOL)",
+          "subfolders": []
+        },
+        {
+          "name": "2003 - The Temple of The Ancient Dragon",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2003 - The Temple of The Ancient Dragon",
+          "subfolders": []
+        },
+        {
+          "name": "2013 - Caminhos da Tradição",
+          "entries": 2,
+          "repo_path": "sectors/02-luciferianism/2013 - Caminhos da Tradição",
+          "subfolders": []
+        },
+        {
+          "name": "1985 - Golden Dawn",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/1985 - Golden Dawn",
+          "subfolders": []
+        },
+        {
+          "name": "2015 - Escola de Lúcifer",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/2015 - Escola de Lúcifer",
+          "subfolders": []
+        },
+        {
+          "name": "2015 - Lilin Society",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/2015 - Lilin Society",
+          "subfolders": []
+        },
+        {
+          "name": "2018 - Ordem dos Rostos Revelados",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/2018 - Ordem dos Rostos Revelados",
+          "subfolders": []
+        },
+        {
+          "name": "Ordem Martinista",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/Ordem Martinista",
+          "subfolders": []
+        },
+        {
+          "name": "Ordem Rosacruz - Amorc",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/Ordem Rosacruz - Amorc",
+          "subfolders": []
+        },
+        {
+          "name": "Ordem Secreta dos Filhos de Lúcifer (OSFLU)",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/Ordem Secreta dos Filhos de Lúcifer (OSFLU)",
+          "subfolders": []
+        },
+        {
+          "name": "TOTH (Tradição Ofidiana Tiphoniana Heckate)",
+          "entries": 1,
+          "repo_path": "sectors/02-luciferianism/TOTH (Tradição Ofidiana Tiphoniana Heckate)",
+          "subfolders": []
+        }
+      ]
+    },
+    {
+      "id": "03-modern-satanism",
+      "label": "Modern Satanism (middle path)",
+      "source_folder": "3. Satanismo Moderno (Caminh do Meio)",
+      "entries": 16406,
+      "subfolders": [
+        {
+          "name": "Morbitvs Vividvs",
+          "entries": 16237,
+          "repo_path": "sectors/03-modern-satanism/Morbitvs Vividvs",
+          "subfolders": [
+            {
+              "name": "Morte Súbita Inc",
+              "entries": 16235,
+              "repo_path": "sectors/03-modern-satanism/Morbitvs Vividvs/Morte Súbita Inc",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "1449 - Goetia",
+          "entries": 55,
+          "repo_path": "sectors/03-modern-satanism/1449 - Goetia",
+          "subfolders": [
+            {
+              "name": "Demonios",
+              "entries": 21,
+              "repo_path": "sectors/03-modern-satanism/1449 - Goetia/Demonios",
+              "subfolders": []
+            },
+            {
+              "name": "1499 - LEMEGETON - THE LESSER KEY OF SOLOMON",
+              "entries": 16,
+              "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON",
+              "subfolders": [
+                {
+                  "name": "1. SALOMÃO (ORIGINAL) - 1499",
+                  "entries": 8,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON/1. SALOMÃO (ORIGINAL) - 1499",
+                  "subfolders": []
+                },
+                {
+                  "name": "3. S. L. MACGREGOR MATHERS Feat. ALEISTER CROWLEY - 1904",
+                  "entries": 2,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON/3. S. L. MACGREGOR MATHERS Feat. ALEISTER CROWLEY - 1904",
+                  "subfolders": []
+                },
+                {
+                  "name": "4. JOSEPH H. PETERSON - 1999",
+                  "entries": 2,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON/4. JOSEPH H. PETERSON - 1999",
+                  "subfolders": []
+                },
+                {
+                  "name": "2. DR. THOMAS RUDD - 1650",
+                  "entries": 1,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON/2. DR. THOMAS RUDD - 1650",
+                  "subfolders": []
+                },
+                {
+                  "name": "5. LEONARDO BIBIANO - 2009",
+                  "entries": 1,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1499 - LEMEGETON - THE LESSER KEY OF SOLOMON/5. LEONARDO BIBIANO - 2009",
+                  "subfolders": []
+                }
+              ]
+            },
+            {
+              "name": "1863 - DICTIONNAIRE INFERNAL (JACQUES AUGUSTE SIMON)",
+              "entries": 5,
+              "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1863 - DICTIONNAIRE INFERNAL (JACQUES AUGUSTE SIMON)",
+              "subfolders": []
+            },
+            {
+              "name": "1517 - GRIMORIUM VERUM - (ALIBECK NA CIDADE DE MENFIS, EGITO)",
+              "entries": 4,
+              "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1517 - GRIMORIUM VERUM - (ALIBECK NA CIDADE DE MENFIS, EGITO)",
+              "subfolders": [
+                {
+                  "name": "Mammon",
+                  "entries": 1,
+                  "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1517 - GRIMORIUM VERUM - (ALIBECK NA CIDADE DE MENFIS, EGITO)/Mammon",
+                  "subfolders": []
+                }
+              ]
+            },
+            {
+              "name": "1900 - GOETIA LUCIFERIANA",
+              "entries": 1,
+              "repo_path": "sectors/03-modern-satanism/1449 - Goetia/1900 - GOETIA LUCIFERIANA",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "- Outros",
+          "entries": 35,
+          "repo_path": "sectors/03-modern-satanism/- Outros",
+          "subfolders": []
+        },
+        {
+          "name": "1966 - Church Of Satan",
+          "entries": 22,
+          "repo_path": "sectors/03-modern-satanism/1966 - Church Of Satan",
+          "subfolders": [
+            {
+              "name": "Anton Szandor Lavey",
+              "entries": 19,
+              "repo_path": "sectors/03-modern-satanism/1966 - Church Of Satan/Anton Szandor Lavey",
+              "subfolders": [
+                {
+                  "name": "Nova pasta",
+                  "entries": 10,
+                  "repo_path": "sectors/03-modern-satanism/1966 - Church Of Satan/Anton Szandor Lavey/Nova pasta",
+                  "subfolders": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meditação e Yoga",
+          "entries": 21,
+          "repo_path": "sectors/03-modern-satanism/Meditação e Yoga",
+          "subfolders": []
+        },
+        {
+          "name": "2005 - Joy Of Satan",
+          "entries": 15,
+          "repo_path": "sectors/03-modern-satanism/2005 - Joy Of Satan",
+          "subfolders": []
+        },
+        {
+          "name": "Filosofia",
+          "entries": 4,
+          "repo_path": "sectors/03-modern-satanism/Filosofia",
+          "subfolders": []
+        },
+        {
+          "name": "2016 - Do Caos a Ordem",
+          "entries": 3,
+          "repo_path": "sectors/03-modern-satanism/2016 - Do Caos a Ordem",
+          "subfolders": []
+        },
+        {
+          "name": "1660 - Roma",
+          "entries": 2,
+          "repo_path": "sectors/03-modern-satanism/1660 - Roma",
+          "subfolders": []
+        },
+        {
+          "name": "Via Draconiana",
+          "entries": 2,
+          "repo_path": "sectors/03-modern-satanism/Via Draconiana",
+          "subfolders": []
+        },
+        {
+          "name": "1400 - ORDEM NÃO IDENTIFICADA",
+          "entries": 1,
+          "repo_path": "sectors/03-modern-satanism/1400 - ORDEM NÃO IDENTIFICADA",
+          "subfolders": [
+            {
+              "name": "1775 - Celeberrimos Artis Hujus Magistros",
+              "entries": 1,
+              "repo_path": "sectors/03-modern-satanism/1400 - ORDEM NÃO IDENTIFICADA/1775 - Celeberrimos Artis Hujus Magistros",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "1988 - Ordo Baphometis",
+          "entries": 1,
+          "repo_path": "sectors/03-modern-satanism/1988 - Ordo Baphometis",
+          "subfolders": []
+        },
+        {
+          "name": "1996 - Order of Setne Khamuast",
+          "entries": 1,
+          "repo_path": "sectors/03-modern-satanism/1996 - Order of Setne Khamuast",
+          "subfolders": []
+        },
+        {
+          "name": "Samael Aun Weor",
+          "entries": 1,
+          "repo_path": "sectors/03-modern-satanism/Samael Aun Weor",
+          "subfolders": []
+        },
+        {
+          "name": "Temple Of Set",
+          "entries": 1,
+          "repo_path": "sectors/03-modern-satanism/Temple Of Set",
+          "subfolders": []
+        }
+      ]
+    },
+    {
+      "id": "04-post-modern-satanism",
+      "label": "Post-modern Satanism (sinister path)",
+      "source_folder": "4. Satanismo Pós Moderno (via sinistra)",
+      "entries": 225,
+      "subfolders": [
+        {
+          "name": "2018 - BTF",
+          "entries": 77,
+          "repo_path": "sectors/04-post-modern-satanism/2018 - BTF",
+          "subfolders": [
+            {
+              "name": "PLAGIO TEMPLE OF BLACK LIGHT",
+              "entries": 49,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT",
+              "subfolders": [
+                {
+                  "name": "Fotos",
+                  "entries": 12,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/Fotos",
+                  "subfolders": []
+                },
+                {
+                  "name": "2. 9 = GAMALIEL - Lilith (av. yesod)",
+                  "entries": 8,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/2. 9 = GAMALIEL - Lilith (av. yesod)",
+                  "subfolders": []
+                },
+                {
+                  "name": "Plágio",
+                  "entries": 8,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/Plágio",
+                  "subfolders": []
+                },
+                {
+                  "name": "0 - Inicio",
+                  "entries": 5,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/0 - Inicio",
+                  "subfolders": []
+                },
+                {
+                  "name": "Rituais Avulsos",
+                  "entries": 4,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/Rituais Avulsos",
+                  "subfolders": []
+                },
+                {
+                  "name": "1.  10 = NAHEMOTH - Naamah (av. malkut)",
+                  "entries": 3,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/1.  10 = NAHEMOTH - Naamah (av. malkut)",
+                  "subfolders": []
+                },
+                {
+                  "name": "11. 0 - TOHU BOHU CHESECK",
+                  "entries": 1,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/11. 0 - TOHU BOHU CHESECK",
+                  "subfolders": []
+                },
+                {
+                  "name": "3. 8 = SAMAEL - Adramelech (av. netzach)",
+                  "entries": 1,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/3. 8 = SAMAEL - Adramelech (av. netzach)",
+                  "subfolders": []
+                },
+                {
+                  "name": "4. 7 = A'ARAB ZARAQ - Baal (av. hod)",
+                  "entries": 1,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/PLAGIO TEMPLE OF BLACK LIGHT/4. 7 = A'ARAB ZARAQ - Baal (av. hod)",
+                  "subfolders": []
+                }
+              ]
+            },
+            {
+              "name": "RIVAIR - ZERO",
+              "entries": 10,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/RIVAIR - ZERO",
+              "subfolders": []
+            },
+            {
+              "name": "Ritos",
+              "entries": 5,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/Ritos",
+              "subfolders": [
+                {
+                  "name": "1. Naamah",
+                  "entries": 1,
+                  "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/Ritos/1. Naamah",
+                  "subfolders": []
+                }
+              ]
+            },
+            {
+              "name": "Debates",
+              "entries": 2,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF/Debates",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT",
+          "entries": 49,
+          "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT",
+          "subfolders": [
+            {
+              "name": "Fotos",
+              "entries": 12,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/Fotos",
+              "subfolders": []
+            },
+            {
+              "name": "2. 9 = GAMALIEL - Lilith (av. yesod)",
+              "entries": 9,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/2. 9 = GAMALIEL - Lilith (av. yesod)",
+              "subfolders": []
+            },
+            {
+              "name": "Plágio",
+              "entries": 8,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/Plágio",
+              "subfolders": []
+            },
+            {
+              "name": "0 - Inicio",
+              "entries": 5,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/0 - Inicio",
+              "subfolders": []
+            },
+            {
+              "name": "Rituais Avulsos",
+              "entries": 4,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/Rituais Avulsos",
+              "subfolders": []
+            },
+            {
+              "name": "1.  10 = NAHEMOTH - Naamah (av. malkut)",
+              "entries": 3,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/1.  10 = NAHEMOTH - Naamah (av. malkut)",
+              "subfolders": []
+            },
+            {
+              "name": "11. 0 - TOHU BOHU CHESECK",
+              "entries": 1,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/11. 0 - TOHU BOHU CHESECK",
+              "subfolders": []
+            },
+            {
+              "name": "4. 7 = A'ARAB ZARAQ - Baal (av. hod)",
+              "entries": 1,
+              "repo_path": "sectors/04-post-modern-satanism/2018 - BTF - PLAGIO TEMPLE OF BLACK LIGHT/4. 7 = A'ARAB ZARAQ - Baal (av. hod)",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "1980 - O9A",
+          "entries": 27,
+          "repo_path": "sectors/04-post-modern-satanism/1980 - O9A",
+          "subfolders": [
+            {
+              "name": "0000 - David Myatt",
+              "entries": 1,
+              "repo_path": "sectors/04-post-modern-satanism/1980 - O9A/0000 - David Myatt",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "- Outros",
+          "entries": 14,
+          "repo_path": "sectors/04-post-modern-satanism/- Outros",
+          "subfolders": [
+            {
+              "name": "Vampirismo",
+              "entries": 1,
+              "repo_path": "sectors/04-post-modern-satanism/- Outros/Vampirismo",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "Chaos Magick",
+          "entries": 13,
+          "repo_path": "sectors/04-post-modern-satanism/Chaos Magick",
+          "subfolders": []
+        },
+        {
+          "name": "2012 - Temple of Ascending Flame",
+          "entries": 12,
+          "repo_path": "sectors/04-post-modern-satanism/2012 - Temple of Ascending Flame",
+          "subfolders": [
+            {
+              "name": "Seth",
+              "entries": 3,
+              "repo_path": "sectors/04-post-modern-satanism/2012 - Temple of Ascending Flame/Seth",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "2014 - Tempel Ov The Black Vampire",
+          "entries": 7,
+          "repo_path": "sectors/04-post-modern-satanism/2014 - Tempel Ov The Black Vampire",
+          "subfolders": [
+            {
+              "name": "SATANIC FRONT",
+              "entries": 1,
+              "repo_path": "sectors/04-post-modern-satanism/2014 - Tempel Ov The Black Vampire/SATANIC FRONT",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "2000 - Temple of the Vampire",
+          "entries": 5,
+          "repo_path": "sectors/04-post-modern-satanism/2000 - Temple of the Vampire",
+          "subfolders": []
+        },
+        {
+          "name": "2010 - Temple Of The Black Light (TOTBL - MLO)",
+          "entries": 4,
+          "repo_path": "sectors/04-post-modern-satanism/2010 - Temple Of The Black Light (TOTBL - MLO)",
+          "subfolders": []
+        },
+        {
+          "name": "Falxifer",
+          "entries": 4,
+          "repo_path": "sectors/04-post-modern-satanism/Falxifer",
+          "subfolders": []
+        },
+        {
+          "name": "Temple Ov Blood",
+          "entries": 3,
+          "repo_path": "sectors/04-post-modern-satanism/Temple Ov Blood",
+          "subfolders": []
+        },
+        {
+          "name": "2006 - Círculo Strigoi (Vampirismo)",
+          "entries": 2,
+          "repo_path": "sectors/04-post-modern-satanism/2006 - Círculo Strigoi (Vampirismo)",
+          "subfolders": []
+        },
+        {
+          "name": "Projeto ZarZax",
+          "entries": 2,
+          "repo_path": "sectors/04-post-modern-satanism/Projeto ZarZax",
+          "subfolders": []
+        },
+        {
+          "name": "1832 - Skull and Bones",
+          "entries": 1,
+          "repo_path": "sectors/04-post-modern-satanism/1832 - Skull and Bones",
+          "subfolders": []
+        },
+        {
+          "name": "2014 - Misanthropic Luciferian Order (MLO)",
+          "entries": 1,
+          "repo_path": "sectors/04-post-modern-satanism/2014 - Misanthropic Luciferian Order (MLO)",
+          "subfolders": []
+        },
+        {
+          "name": "2015 - Black Tower Publishing",
+          "entries": 1,
+          "repo_path": "sectors/04-post-modern-satanism/2015 - Black Tower Publishing",
+          "subfolders": []
+        },
+        {
+          "name": "2018 - Ordem de Kurtludixs (O.K.L.D.)",
+          "entries": 1,
+          "repo_path": "sectors/04-post-modern-satanism/2018 - Ordem de Kurtludixs (O.K.L.D.)",
+          "subfolders": []
+        }
+      ]
+    },
+    {
+      "id": "05-basic-books",
+      "label": "Basic books",
+      "source_folder": "0. Livros Básicos",
+      "entries": 11,
+      "subfolders": []
+    },
+    {
+      "id": "06-magazines",
+      "label": "Magazines",
+      "source_folder": "Magazines e Revistas",
+      "entries": 240,
+      "subfolders": [
+        {
+          "name": "Lucifer Luciferax",
+          "entries": 229,
+          "repo_path": "sectors/06-magazines/Lucifer Luciferax",
+          "subfolders": []
+        },
+        {
+          "name": "Sitra Ahra",
+          "entries": 5,
+          "repo_path": "sectors/06-magazines/Sitra Ahra",
+          "subfolders": []
+        },
+        {
+          "name": "Infernus",
+          "entries": 2,
+          "repo_path": "sectors/06-magazines/Infernus",
+          "subfolders": []
+        },
+        {
+          "name": "Poemas",
+          "entries": 2,
+          "repo_path": "sectors/06-magazines/Poemas",
+          "subfolders": []
+        },
+        {
+          "name": "Anti-Cósmica",
+          "entries": 1,
+          "repo_path": "sectors/06-magazines/Anti-Cósmica",
+          "subfolders": []
+        },
+        {
+          "name": "Via Sinistra",
+          "entries": 1,
+          "repo_path": "sectors/06-magazines/Via Sinistra",
+          "subfolders": []
+        }
+      ]
+    },
+    {
+      "id": "07-to-organize",
+      "label": "To organize",
+      "source_folder": "Organizar",
+      "entries": 759,
+      "subfolders": [
+        {
+          "name": "Auto Ajuda e Melhoria Pessoal",
+          "entries": 686,
+          "repo_path": "sectors/07-to-organize/Auto Ajuda e Melhoria Pessoal",
+          "subfolders": []
+        },
+        {
+          "name": "escobar",
+          "entries": 9,
+          "repo_path": "sectors/07-to-organize/escobar",
+          "subfolders": []
+        },
+        {
+          "name": "Curiosidades",
+          "entries": 7,
+          "repo_path": "sectors/07-to-organize/Curiosidades",
+          "subfolders": [
+            {
+              "name": "Hist",
+              "entries": 1,
+              "repo_path": "sectors/07-to-organize/Curiosidades/Hist",
+              "subfolders": []
+            }
+          ]
+        },
+        {
+          "name": "Procurar por",
+          "entries": 1,
+          "repo_path": "sectors/07-to-organize/Procurar por",
+          "subfolders": []
+        }
+      ]
+    }
+  ],
+  "not_materialized": [
+    {
+      "kind": "website mirror archive directories",
+      "sector": "03-modern-satanism",
+      "path": "Morbitvs Vividvs/Morte Súbita Inc",
+      "directories": 3460,
+      "reason": "Counted in the sector entries, but not book subfolders."
+    },
+    {
+      "kind": "generated cache/record directories",
+      "sector": "06-magazines",
+      "path": "Lucifer Luciferax/ocr_cache and Lucifer Luciferax/records",
+      "directories": 105,
+      "reason": "Processing artifacts, not library subfolders."
+    },
+    {
+      "kind": "generated cache/record directories",
+      "sector": "07-to-organize",
+      "path": "Auto Ajuda e Melhoria Pessoal/_pdf2md",
+      "directories": 54,
+      "reason": "Processing artifacts, not library subfolders."
+    }
+  ]
+}

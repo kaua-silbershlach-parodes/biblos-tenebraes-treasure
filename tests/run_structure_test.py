@@ -11,6 +11,7 @@ def main():
     corpus = json.load(open(os.path.join(ROOT, "corpus.json")))
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
+    sector_tree = json.load(open(os.path.join(ROOT, "data", "sector_tree.json")))
     failures = 0
 
     def check(name, ok):
@@ -38,7 +39,24 @@ def main():
     check("every chunk is mapped or declared", mapped | set(practices["coverage"]["chunks_language_layer"]) == chunk_ids)
     check("exercises are marked derived", all(e["derived"] for e in practices["exercises"]))
     check("gaps registry is non-empty", len(practices["gaps"]) >= 1)
-    print(f"{7 - failures}/7 structure checks pass")
+
+    tree_paths = []
+    def collect(node):
+        for child in node.get("subfolders", []):
+            tree_paths.append(child["repo_path"])
+            collect(child)
+    for sector in sector_tree["sectors"]:
+        collect(sector)
+    check("sector tree folders exist", all(
+        os.path.isdir(os.path.join(ROOT, path)) for path in tree_paths
+    ))
+    check("every card path folder exists", all(
+        os.path.isdir(os.path.join(ROOT, "sectors", c["sector"], *c["subfolder"].split("/")))
+        for c in corpus
+    ))
+    check("book 1 leaf folder is in the sector tree",
+          "sectors/01-traditional-satanism/Demonologia/Lilith" in tree_paths)
+    print(f"{10 - failures}/10 structure checks pass")
     return 0 if failures == 0 else 1
 
 

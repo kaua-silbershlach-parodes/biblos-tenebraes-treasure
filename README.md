@@ -32,7 +32,8 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 ## Techniques from the first book — sector: Traditional Satanism
 
 The first book read comes from the **Traditional Satanism** sector,
-subfolder **Demonologia / Lilith**:
+subfolder **Demonologia / Lilith**
+(`sectors/01-traditional-satanism/Demonologia/Lilith`):
 **177 entries in this sector, of 17,927 in the whole library (0.99%)**.
 Its 15 techniques:
 
