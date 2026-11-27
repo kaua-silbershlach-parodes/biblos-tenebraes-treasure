@@ -26,7 +26,10 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 - `tests/run_engine_test.py` — known questions that must rank their
   technique first, under both models.
 
-## Techniques from the first book
+## Techniques from the first book — sector: Traditional Satanism
+
+The first book read comes from the **Traditional Satanism** sector
+(`sectors/01-traditional-satanism`, 177 entries). Its 12 techniques:
 
 **Frame the work**
 
@@ -53,9 +56,13 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 
 - Local engine: 24/24 known questions rank their technique first, under
   both models.
-- Oracle AI Database 26ai (lab): both models loaded in-database, 12/12
-  vector pairs populated, in-database search returns the same top technique
-  as the local engine.
+- Full Oracle suite (`tests/run_full_suite_linux.py`, the same suite that
+  verifies the writing engine): **14 PASS + 2 BLOCKED** on Oracle AI
+  Database 26ai — exact and approximate search agree with the local engine
+  (8/8 top-1), HNSW and IVF indexes, hybrid search, external table, five
+  distance metrics, Private AI container embeddings, CLIP text encoder,
+  chunking, RAG retrieval, and ORDS REST all pass. The 2 BLOCKED are text
+  generation: the running Private AI container serves no LLM.
 - The dump round-trips: import restores 12 rows with 12/12 non-null vector
   pairs.
 
