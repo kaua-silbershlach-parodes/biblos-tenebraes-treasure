@@ -75,7 +75,21 @@ def main():
         library_metrics["service_levels"]["availability_target_percent"] == 99.9
         and library_metrics["service_levels"]["measured_baseline"]["engine_test_result"] == "30/30"
     ))
-    print(f"{13 - failures}/13 structure checks pass")
+    cases = json.load(open(os.path.join(ROOT, "data", "illuminati_cases.json")))
+    check("illuminati cases bind real techniques and pages", (
+        cases["book"] == 2 and len(cases["cases"]) == 14 and cases["gaps"]
+        and all(set(case["techniques"]) <= card_ids for case in cases["cases"])
+        and all(1 <= case["pages"][0] <= case["pages"][1] <= cases["pages"] for case in cases["cases"])
+    ))
+    crossing = json.load(open(os.path.join(ROOT, "data", "crossing.json")))
+    check("crossing pairs bind real techniques across books", (
+        crossing["books_crossed"] == [1, 2] and crossing["pairs_measured"] == 180
+        and all(p["a"] in card_ids and p["b"] in card_ids and p["a_book"] != p["b_book"]
+                for p in crossing["strongest_pairs"])
+        and all(a in card_ids and b in card_ids
+                for bridge in crossing["bridges"] for a, b in bridge["pairs"])
+    ))
+    print(f"{15 - failures}/15 structure checks pass")
     return 0 if failures == 0 else 1
 
 

@@ -1,0 +1,175 @@
+{
+ "books_crossed": [
+  1,
+  2
+ ],
+ "model": "e5",
+ "pairs_measured": 180,
+ "strongest_pairs": [
+  {
+   "score": 0.871,
+   "a": "bt-09",
+   "a_title": "Dual-Aspect Invocation",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.858,
+   "a": "bt-03",
+   "a_title": "Circle Formation",
+   "a_book": 1,
+   "b": "bt-17",
+   "b_title": "Front Structures and Proxies",
+   "b_book": 2
+  },
+  {
+   "score": 0.856,
+   "a": "bt-13",
+   "a_title": "Single Entry",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.854,
+   "a": "bt-05",
+   "a_title": "Shared Visualization",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.852,
+   "a": "bt-01",
+   "a_title": "Banishing Frame",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.851,
+   "a": "bt-01",
+   "a_title": "Banishing Frame",
+   "a_book": 1,
+   "b": "bt-26",
+   "b_title": "Sealing and Oath Binding",
+   "b_book": 2
+  },
+  {
+   "score": 0.849,
+   "a": "bt-02",
+   "a_title": "Spoken Intention",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.849,
+   "a": "bt-03",
+   "a_title": "Circle Formation",
+   "a_book": 1,
+   "b": "bt-21",
+   "b_title": "Monopoly Formation",
+   "b_book": 2
+  },
+  {
+   "score": 0.849,
+   "a": "bt-03",
+   "a_title": "Circle Formation",
+   "a_book": 1,
+   "b": "bt-22",
+   "b_title": "Secrecy Discipline",
+   "b_book": 2
+  },
+  {
+   "score": 0.849,
+   "a": "bt-04",
+   "a_title": "Alternating Mantra",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.848,
+   "a": "bt-03",
+   "a_title": "Circle Formation",
+   "a_book": 1,
+   "b": "bt-18",
+   "b_title": "Controlled Opposition",
+   "b_book": 2
+  },
+  {
+   "score": 0.847,
+   "a": "bt-01",
+   "a_title": "Banishing Frame",
+   "a_book": 1,
+   "b": "bt-17",
+   "b_title": "Front Structures and Proxies",
+   "b_book": 2
+  }
+ ],
+ "bridges": [
+  {
+   "name": "The sealed boundary",
+   "reading": "Both books seal a boundary before work begins: the rite opens and closes with a banishing, the order binds vows with seals and oaths. What forms is one operation at two scales — a protected space whose edge is marked and guarded.",
+   "pairs": [
+    [
+     "bt-01",
+     "bt-26"
+    ],
+    [
+     "bt-03",
+     "bt-22"
+    ],
+    [
+     "bt-14",
+     "bt-22"
+    ]
+   ]
+  },
+  {
+   "name": "Two sides held in one frame",
+   "reading": "The rite invokes the terrible and the beautiful together; the power book steers thesis against antithesis toward a managed outcome. What forms is the discipline of holding opposed forces inside a single frame instead of choosing one side.",
+   "pairs": [
+    [
+     "bt-09",
+     "bt-18"
+    ],
+    [
+     "bt-05",
+     "bt-18"
+    ],
+    [
+     "bt-04",
+     "bt-18"
+    ]
+   ]
+  },
+  {
+   "name": "The circle and the front",
+   "reading": "Participants sit equidistant around a center; institutions stand as a visible ring while direction sits at the hidden center. What forms is the same geometry: a public circumference, a directing middle.",
+   "pairs": [
+    [
+     "bt-03",
+     "bt-17"
+    ],
+    [
+     "bt-05",
+     "bt-17"
+    ],
+    [
+     "bt-01",
+     "bt-17"
+    ]
+   ]
+  }
+ ],
+ "note": "Scores are e5 cosine similarities between derived technique cards. Bridges are readings of the strongest measured pairs, in derived words; they assert structure, not historical fact."
+}

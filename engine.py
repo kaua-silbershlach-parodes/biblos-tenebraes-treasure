@@ -22,6 +22,7 @@ model files do not load.
 """
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -62,6 +63,27 @@ def embed(session, texts):
     return np.concatenate(parts, axis=0)
 
 
+def embed_cached(session, model_name, texts):
+    """Embed documents once, then reuse: keyed by model + exact texts.
+
+    Book 2's Private Intelligence Advantage applied to the engine itself:
+    repeated searches must not pay the full embedding cost again.
+    """
+    key = hashlib.sha256(
+        (model_name + "\n" + "\n".join(texts)).encode("utf-8")
+    ).hexdigest()
+    cache_dir = os.path.join(ROOT, "data", ".embedding-cache")
+    cache_file = os.path.join(cache_dir, key + ".npy")
+    if os.path.exists(cache_file):
+        vecs = np.load(cache_file)
+        if vecs.shape == (len(texts), DIMS):
+            return vecs
+    vecs = embed(session, texts)
+    os.makedirs(cache_dir, exist_ok=True)
+    np.save(cache_file, vecs)
+    return vecs
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("query", help="the question to match against the techniques")
@@ -98,13 +120,15 @@ def main():
         chunk_path = "02-luciferianism/1995 - Iluminattis/book-2" if args.book2 else "01-traditional-satanism/Demonologia/Lilith/book-1"
         with open(os.path.join(ROOT, "data", chunk_file), encoding="utf-8") as f:
             chunks = json.load(f)
-        doc_vecs = embed(session, [c["text"] for c in chunks])
+        doc_vecs = embed_cached(session, args.model, [c["text"] for c in chunks])
         doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
         scores = doc_vecs @ query_vec
         order = np.argsort(-scores)[: args.top]
         for rank, idx in enumerate(order, 1):
             c = chunks[idx]
             print(f"{rank}. [chunk {c['id']} · page {c['page']} · {chunk_path}] {scores[idx]:.3f}")
+        if scores[order[0]] < 0.35:
+            print("Weak match: the best passage is only loosely related to the question.")
         return 0
 
     with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:
@@ -116,13 +140,16 @@ def main():
             return 1
 
     docs = [f"{item['title']}. {item['text']}" for item in corpus]
-    doc_vecs = embed(session, docs)
+    doc_vecs = embed_cached(session, args.model, docs)
+    doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
     scores = doc_vecs @ query_vec
 
     order = np.argsort(-scores)[: args.top]
     for rank, idx in enumerate(order, 1):
         item = corpus[idx]
         print(f"{rank}. [{item['id']}] {item['title']} — {scores[idx]:.3f} · {item['path']}")
+    if scores[order[0]] < 0.35:
+        print("Weak match: the best technique is only loosely related to the question.")
     return 0
 
 

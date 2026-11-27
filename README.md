@@ -87,6 +87,35 @@ techniques:
 - Sealing and Oath Binding — vows sealed through exchanged objects.
 - Wholesome-Front Deception — a trusted brand lowering the guard.
 
+## The crossing — what forms between the books
+
+`tools/cross_books.py` embeds every technique card and measures the 180
+cross-book pairs (`data/crossing.json`). Three bridges form:
+
+- **The sealed boundary** — the rite opens and closes with a banishing;
+  the order binds vows with seals and oaths. One operation at two scales:
+  a protected space whose edge is marked and guarded.
+- **Two sides held in one frame** — the terrible and the beautiful
+  invoked together; thesis steered against antithesis. The discipline of
+  holding opposed forces inside a single frame.
+- **The circle and the front** — participants equidistant around a
+  center; institutions as a visible ring with direction at the hidden
+  middle. A public circumference, a directing center.
+
+## The engine applied to itself
+
+The second book's techniques, turned on the engine that carries them:
+
+- **Private Intelligence Advantage** → document embeddings are cached
+  (`data/.embedding-cache/`, keyed by model and exact texts), so repeated
+  searches do not pay the full embedding cost again.
+- **Bloodline Mapping** → provenance is checked as a graph: every case
+  binds real technique cards and real pages, every crossing pair binds
+  real cards across books (structure test).
+- **Two sides held in one frame** → results hold their own weakness:
+  a top score under 0.35 is printed as a weak match instead of passing
+  as a finding.
+
 ## Verified
 
 - Local engine: 54/54 known questions rank their technique first, under
