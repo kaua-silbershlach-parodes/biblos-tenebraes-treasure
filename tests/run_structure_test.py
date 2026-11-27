@@ -11,6 +11,8 @@ def main():
     corpus = json.load(open(os.path.join(ROOT, "corpus.json")))
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
+    chunks2 = json.load(open(os.path.join(ROOT, "data", "book2_chunks.json")))
+    chunk_sets = {1: {c["id"] for c in chunks}, 2: {c["id"] for c in chunks2}}
     sector_tree = json.load(open(os.path.join(ROOT, "data", "sector_tree.json")))
     library_metrics = json.load(open(os.path.join(ROOT, "data", "library_metrics.json")))
     failures = 0
@@ -20,13 +22,13 @@ def main():
         failures += 0 if ok else 1
         print(f"{'PASS' if ok else 'FAIL'} {name}")
 
-    chunk_ids = {c["id"] for c in chunks}
     check("every card has provenance inside the book", all(
-        set(c["provenance"]["chunks"]) <= chunk_ids and c["provenance"]["pages"]
+        set(c["provenance"]["chunks"]) <= chunk_sets[c["book"]] and c["provenance"]["pages"]
         for c in corpus
     ))
     check("every card names book and sector", all(
-        c["book"] == 1 and c["sector"] == "01-traditional-satanism" for c in corpus
+        (c["book"], c["sector"]) in {(1, "01-traditional-satanism"), (2, "02-luciferianism")}
+        for c in corpus
     ))
     orders = [p["order"] for p in practices["phases"]]
     check("phase order is 1..N without gaps", orders == list(range(1, len(orders) + 1)))
@@ -37,6 +39,7 @@ def main():
     mapped = set()
     for p in practices["phases"]:
         mapped |= set(p["chunks"])
+    chunk_ids = chunk_sets[1]
     check("every chunk is mapped or declared", mapped | set(practices["coverage"]["chunks_language_layer"]) == chunk_ids)
     check("exercises are marked derived", all(e["derived"] for e in practices["exercises"]))
     check("gaps registry is non-empty", len(practices["gaps"]) >= 1)

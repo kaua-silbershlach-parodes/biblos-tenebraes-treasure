@@ -25,6 +25,18 @@ CASES = [
     ("should participants enter the space one at a time", "bt-13"),
     ("why separate the participants before the closing", "bt-14"),
     ("how should the working space be lit", "bt-15"),
+    ("how is power traced through descent intermarriage and surname changes", "bt-16"),
+    ("how does influence move through foundations banks and cover bodies", "bt-17"),
+    ("how are two managed sides staged so conflict produces a chosen outcome", "bt-18"),
+    ("how are history education press and reputation controlled", "bt-19"),
+    ("why place advisers and gatekeepers beside decision makers", "bt-20"),
+    ("how do privilege cartels and state contracts become monopoly control", "bt-21"),
+    ("how do compartmentation oral orders and cover lives protect secrecy", "bt-22"),
+    ("why do private couriers and coded correspondence give an intelligence advantage", "bt-23"),
+    ("how does grant dependence capture universities churches and media", "bt-24"),
+    ("how do banking panics justify new central authorities", "bt-25"),
+    ("how are vows sealed with exchanged objects and oaths", "bt-26"),
+    ("how does a trusted family brand lower the audience guard", "bt-27"),
 ]
 
 

@@ -8,7 +8,7 @@ published — only the totals and the sector structure. See
 
 The library is read one book at a time, smallest first. Each book becomes a
 set of technique cards in `corpus.json`, and the engine ranks those cards
-against a plain-words question. The first book is in: 15 techniques.
+against a plain-words question. Two books are in: 27 techniques.
 
 ## The engine
 
@@ -62,14 +62,39 @@ techniques:
 - Separation Before Closure — the group separates before the final thanks.
 - Myth Study First — names, aspects, and history known beforehand.
 
+## Techniques from the second book — Luciferianism / 1995 - Iluminattis
+
+The second book read is the smallest of the three text PDFs in the
+**1995 - Iluminattis** subfolder (292 pages, 204,330 words), at the full
+path **Luciferianism → 1995 - Iluminattis**
+(`sectors/02-luciferianism/1995 - Iluminattis`): the sector holds 107
+entries, and the subfolder holds 3. Its whole text is converted into
+13,179 sentence-level chunks (`data/book2_chunks.json`), and its 14
+family cases are catalogued in `data/illuminati_cases.json` — the book's
+claims in derived words, with their evidence gaps kept visible. Its 12
+techniques:
+
+- Bloodline Mapping — power traced through descent and intermarriage.
+- Front Structures and Proxies — influence through respectable cover bodies.
+- Controlled Opposition — managed conflict producing a chosen outcome.
+- Information Control — history, press, and reputation as controlled channels.
+- Advisor Placement — gatekeepers beside decision-makers.
+- Monopoly Formation — privilege and cartels becoming durable control.
+- Secrecy Discipline — compartmentation and cover lives.
+- Private Intelligence Advantage — couriers and coded correspondence.
+- Institutional Capture by Funding — grant dependence aligning institutions.
+- Crisis-to-Institution Sequence — panics justifying central authorities.
+- Sealing and Oath Binding — vows sealed through exchanged objects.
+- Wholesome-Front Deception — a trusted brand lowering the guard.
+
 ## Verified
 
-- Local engine: 30/30 known questions rank their technique first, under
+- Local engine: 54/54 known questions rank their technique first, under
   both models.
-- Reading control (`tools/reading_control.py`): every one of the 46
-  chunks is mapped to a phase or declared, every card is supported by
-  its own provenance chunks, and every named tool appears in the chunks
-  its phase cites — PASS.
+- Reading control (`tools/reading_control.py`): every one of the first
+  book's 46 chunks is mapped to a phase or declared, every one of the 27
+  cards is supported by its own provenance chunks in its own book, and
+  every named tool appears in the chunks its phase cites — PASS.
 - Full Oracle suite (`tests/run_full_suite_linux.py`, the same suite that
   verifies the writing engine): **14 PASS + 2 BLOCKED** on Oracle AI
   Database 26ai — exact and approximate search agree with the local engine
@@ -82,6 +107,8 @@ techniques:
 - Whole-book search: over the 46 chunks of the complete first book, the
   engine returns the exact passage with its chunk and page, and every
   result carries the full path
-  `01-traditional-satanism/Demonologia/Lilith/book-1`.
+  `01-traditional-satanism/Demonologia/Lilith/book-1`. The second book's
+  13,179 chunks search the same way under
+  `02-luciferianism/1995 - Iluminattis/book-2` (`--book2`).
 
 Copyright (c) A Elite Estrangeira.

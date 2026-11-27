@@ -28,7 +28,9 @@ def main():
     corpus = json.load(open(os.path.join(ROOT, "corpus.json")))
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
-    by_id = {c["id"]: c for c in chunks}
+    chunks2 = json.load(open(os.path.join(ROOT, "data", "book2_chunks.json")))
+    chunk_sets = {1: {c["id"]: c for c in chunks}, 2: {c["id"]: c for c in chunks2}}
+    by_id = chunk_sets[1]
     failures = 0
 
     def report(name, ok, detail=""):
@@ -45,14 +47,21 @@ def main():
 
     for name in ("e5", "minilm"):
         session = load_session(MODELS[name])
-        chunk_vecs = embed(session, [c["text"] for c in chunks])
-        chunk_vecs = chunk_vecs / np.linalg.norm(chunk_vecs, axis=1, keepdims=True)
+        vec_cache = {}
+
+        def chunk_vec(book, cid):
+            key = (book, cid)
+            if key not in vec_cache:
+                vec = embed(session, [chunk_sets[book][cid]["text"]])[0]
+                vec_cache[key] = vec / np.linalg.norm(vec)
+            return vec_cache[key]
+
         weak = []
         scores = []
         for card in corpus:
             cv = embed(session, [f"{card['title']}. {card['text']}"])[0]
             cv = cv / np.linalg.norm(cv)
-            support = max(float(chunk_vecs[cid - 1] @ cv) for cid in card["provenance"]["chunks"])
+            support = max(float(chunk_vec(card["book"], cid) @ cv) for cid in card["provenance"]["chunks"])
             scores.append(support)
             if support < SUPPORT_THRESHOLD:
                 weak.append(f"{card['id']}={support:.2f}")

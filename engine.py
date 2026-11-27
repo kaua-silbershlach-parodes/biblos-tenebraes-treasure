@@ -48,12 +48,18 @@ def load_session(model_path):
 
 def embed(session, texts):
     inp = session.get_inputs()[0]
-    outs = session.run(None, {inp.name: np.array(texts, dtype=object)})
-    for out in outs:
-        arr = np.asarray(out, dtype=np.float64)
-        if arr.ndim == 2 and arr.shape[1] == DIMS:
-            return arr
-    raise RuntimeError("model produced no 384-dimension embedding output")
+    parts = []
+    for start in range(0, len(texts), 16):
+        batch = texts[start:start + 16]
+        outs = session.run(None, {inp.name: np.array(batch, dtype=object)})
+        for out in outs:
+            arr = np.asarray(out, dtype=np.float64)
+            if arr.ndim == 2 and arr.shape[1] == DIMS:
+                parts.append(arr)
+                break
+        else:
+            raise RuntimeError("model produced no 384-dimension embedding output")
+    return np.concatenate(parts, axis=0)
 
 
 def main():
@@ -72,6 +78,11 @@ def main():
         help="search the whole book chunks (data/book_chunks.json) instead of the technique cards",
     )
     parser.add_argument(
+        "--book2",
+        action="store_true",
+        help="search the second book chunks (data/book2_chunks.json) instead of the technique cards",
+    )
+    parser.add_argument(
         "--sector",
         default=None,
         help="route the search to one sector (e.g. 01-traditional-satanism)",
@@ -82,8 +93,10 @@ def main():
     query_vec = embed(session, [args.query])[0]
     query_vec = query_vec / np.linalg.norm(query_vec)
 
-    if args.book:
-        with open(os.path.join(ROOT, "data", "book_chunks.json"), encoding="utf-8") as f:
+    if args.book or args.book2:
+        chunk_file = "book2_chunks.json" if args.book2 else "book_chunks.json"
+        chunk_path = "02-luciferianism/1995 - Iluminattis/book-2" if args.book2 else "01-traditional-satanism/Demonologia/Lilith/book-1"
+        with open(os.path.join(ROOT, "data", chunk_file), encoding="utf-8") as f:
             chunks = json.load(f)
         doc_vecs = embed(session, [c["text"] for c in chunks])
         doc_vecs = doc_vecs / np.linalg.norm(doc_vecs, axis=1, keepdims=True)
@@ -91,7 +104,7 @@ def main():
         order = np.argsort(-scores)[: args.top]
         for rank, idx in enumerate(order, 1):
             c = chunks[idx]
-            print(f"{rank}. [chunk {c['id']} · page {c['page']} · 01-traditional-satanism/Demonologia/Lilith/book-1] {scores[idx]:.3f}")
+            print(f"{rank}. [chunk {c['id']} · page {c['page']} · {chunk_path}] {scores[idx]:.3f}")
         return 0
 
     with open(os.path.join(ROOT, "corpus.json"), encoding="utf-8") as f:

@@ -114,9 +114,11 @@ but are not materialized as book subfolders.
 | Book | Sector | Subfolder path | Repository folder | Entries in leaf subfolder |
 | --- | --- | --- | --- | ---: |
 | Book 1 | Traditional Satanism | Demonologia / Lilith | `sectors/01-traditional-satanism/Demonologia/Lilith` | 17 |
+| Book 2 | Luciferianism | 1995 - Iluminattis | `sectors/02-luciferianism/1995 - Iluminattis` | 3 |
 
 Demonologia holds 60 entries in total; Lilith, the leaf subfolder of
-Book 1, holds 17.
+Book 1, holds 17. The 1995 - Iluminattis subfolder holds 3 entries, all
+text PDFs (292, 304, and 588 pages); Book 2 is the smallest of the three.
 
 ## Library metrics
 
@@ -244,9 +246,9 @@ sector. Coverage is measured in books read and techniques extracted:
 
 | Measure | Count |
 | --- | ---: |
-| Books read | 1 |
-| Techniques extracted | 15 |
-| Sectors covered | 1 of 7 (Traditional Satanism) |
+| Books read | 2 |
+| Techniques extracted | 27 |
+| Sectors covered | 2 of 7 (Traditional Satanism, Luciferianism) |
 | Sector size | 177 entries of 17,927 global (0.99%) |
 
 ## Scope and restrictions

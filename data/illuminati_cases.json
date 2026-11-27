@@ -1,0 +1,193 @@
+{
+ "book": 2,
+ "sector": "02-luciferianism",
+ "subfolder": "1995 - Iluminattis",
+ "path": "02-luciferianism/1995 - Iluminattis/book-2",
+ "pages": 292,
+ "words": 204330,
+ "chunks": 13179,
+ "evidence_note": "Cases catalog the book claims in own words; many rest on informants and inference, so each case keeps its gaps visible.",
+ "cases": [
+  {
+   "name": "Astor",
+   "pages": [
+    5,
+    16
+   ],
+   "pattern": "Rise through lodge access and state privilege into fur, opium, land, and banking, then influence through press, foundations, and transatlantic institutions.",
+   "techniques": [
+    "bt-17",
+    "bt-21",
+    "bt-19"
+   ]
+  },
+  {
+   "name": "Bundy",
+   "pages": [
+    18,
+    26
+   ],
+   "pattern": "Adviser, intelligence, and foundation placement, with a manufactured problem and managed solution used as the model case.",
+   "techniques": [
+    "bt-20",
+    "bt-18"
+   ]
+  },
+  {
+   "name": "Collins/Todd",
+   "pages": [
+    27,
+    47
+   ],
+   "pattern": "Hidden occult authority with council imagery, witness intimidation, and a prison-framing narrative showing retaliation against exposure.",
+   "techniques": [
+    "bt-22",
+    "bt-16"
+   ]
+  },
+  {
+   "name": "DuPont",
+   "pages": [
+    48,
+    61
+   ],
+   "pattern": "Dynastic secrecy, press management, cousin marriage, chemical monopoly, and state capture in one small state.",
+   "techniques": [
+    "bt-16",
+    "bt-21",
+    "bt-19"
+   ]
+  },
+  {
+   "name": "Freeman/Prieure",
+   "pages": [
+    62,
+    70
+   ],
+   "pattern": "A guarded bloodline order with archives, grand-master succession, and presidential advisers as hidden instruction channels.",
+   "techniques": [
+    "bt-16",
+    "bt-20",
+    "bt-22"
+   ]
+  },
+  {
+   "name": "Kennedy",
+   "pages": [
+    71,
+    82
+   ],
+   "pattern": "Surname frequency blocks simple identification, so the search shifts to intermarriage clusters and aristocratic branches.",
+   "techniques": [
+    "bt-16"
+   ]
+  },
+  {
+   "name": "Li/Triad",
+   "pages": [
+    83,
+    96
+   ],
+   "pattern": "Territorial factions with public covers, strong-arm units, extortion, and infiltration of police and government.",
+   "techniques": [
+    "bt-17",
+    "bt-22",
+    "bt-26"
+   ]
+  },
+  {
+   "name": "Onassis",
+   "pages": [
+    97,
+    104
+   ],
+   "pattern": "Shipping wealth and social access read as power channels, with sparse direct ritual evidence admitted in the text.",
+   "techniques": [
+    "bt-23",
+    "bt-21"
+   ]
+  },
+  {
+   "name": "Rockefeller",
+   "pages": [
+    105,
+    113
+   ],
+   "pattern": "Layered trusts and foundations funding seminaries, universities, media, and religious bodies into alignment.",
+   "techniques": [
+    "bt-24",
+    "bt-17",
+    "bt-19"
+   ]
+  },
+  {
+   "name": "Rothschild",
+   "pages": [
+    114,
+    147
+   ],
+   "pattern": "Five brother-led houses in major capitals, family-only partnership, private couriers, coded correspondence, and finance as control over governments.",
+   "techniques": [
+    "bt-23",
+    "bt-16",
+    "bt-21"
+   ]
+  },
+  {
+   "name": "Disney",
+   "pages": [
+    221,
+    269
+   ],
+   "pattern": "A wholesome family brand allegedly lowering audience guard, with a wordless music film catalogued as a foundation template case at abstract level only.",
+   "techniques": [
+    "bt-27",
+    "bt-19"
+   ]
+  },
+  {
+   "name": "Reynolds",
+   "pages": [
+    270,
+    277
+   ],
+   "pattern": "Foundation grant networks and interlocking directorates linking tobacco, banking, aluminum, and universities.",
+   "techniques": [
+    "bt-24",
+    "bt-17"
+   ]
+  },
+  {
+   "name": "McDonald",
+   "pages": [
+    278,
+    284
+   ],
+   "pattern": "Clan continuity claims and franchise diffusion, with a documented compensation report used as an evidence exhibit.",
+   "techniques": [
+    "bt-16",
+    "bt-17"
+   ]
+  },
+  {
+   "name": "Krupp",
+   "pages": [
+    285,
+    292
+   ],
+   "pattern": "Concealed rearmament through foreign front companies, scandal suppression, and trial reversal by an insider.",
+   "techniques": [
+    "bt-17",
+    "bt-19",
+    "bt-22"
+   ]
+  }
+ ],
+ "gaps": [
+  "Many claims rest on confidential interviews, unnamed informants, or inference rather than documents shown in the text.",
+  "Namesake ambiguity affects several family cases; similar surnames are not proof of relation.",
+  "OCR noise makes some names, figures, and dates unreliable as extracted.",
+  "Ritual descriptions are fragmentary: roles and symbols appear without procedures, durations, or safeguards.",
+  "Internal article page numbers restart; PDF page markers are the reliable locator."
+ ]
+}
