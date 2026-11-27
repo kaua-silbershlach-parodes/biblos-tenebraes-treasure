@@ -1,118 +1,126 @@
 {
  "books_crossed": [
   1,
-  2
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
  ],
  "model": "e5",
- "pairs_measured": 180,
+ "pairs_measured": 8761,
  "strongest_pairs": [
   {
-   "score": 0.871,
-   "a": "bt-09",
-   "a_title": "Dual-Aspect Invocation",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.906,
+   "a": "bt-84",
+   "a_title": "Planetary Correspondence Mapping",
+   "a_book": 8,
+   "b": "bt-123",
+   "b_title": "Correspondence-Table Method",
+   "b_book": 10
   },
   {
-   "score": 0.858,
-   "a": "bt-03",
-   "a_title": "Circle Formation",
-   "a_book": 1,
-   "b": "bt-17",
-   "b_title": "Front Structures and Proxies",
-   "b_book": 2
+   "score": 0.905,
+   "a": "bt-55",
+   "a_title": "Septenary Correspondence",
+   "a_book": 5,
+   "b": "bt-134",
+   "b_title": "Sevenfold Ascent Mapping",
+   "b_book": 10
   },
   {
-   "score": 0.856,
-   "a": "bt-13",
-   "a_title": "Single Entry",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.9,
+   "a": "bt-22",
+   "a_title": "Secrecy Discipline",
+   "a_book": 2,
+   "b": "bt-102",
+   "b_title": "Oath-Penalty Secrecy System (Claimed)",
+   "b_book": 9
   },
   {
-   "score": 0.854,
-   "a": "bt-05",
-   "a_title": "Shared Visualization",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.9,
+   "a": "bt-80",
+   "a_title": "Media Trigger Catalog (Claimed)",
+   "a_book": 7,
+   "b": "bt-96",
+   "b_title": "Plain-Sight Signaling (Claimed)",
+   "b_book": 9
   },
   {
-   "score": 0.852,
-   "a": "bt-01",
-   "a_title": "Banishing Frame",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.895,
+   "a": "bt-76",
+   "a_title": "Gatekeeper Layering (Claimed)",
+   "a_book": 7,
+   "b": "bt-96",
+   "b_title": "Plain-Sight Signaling (Claimed)",
+   "b_book": 9
   },
   {
-   "score": 0.851,
-   "a": "bt-01",
-   "a_title": "Banishing Frame",
-   "a_book": 1,
-   "b": "bt-26",
-   "b_title": "Sealing and Oath Binding",
-   "b_book": 2
+   "score": 0.893,
+   "a": "bt-70",
+   "a_title": "Assessment Before Structuring (Claimed)",
+   "a_book": 7,
+   "b": "bt-96",
+   "b_title": "Plain-Sight Signaling (Claimed)",
+   "b_book": 9
   },
   {
-   "score": 0.849,
-   "a": "bt-02",
-   "a_title": "Spoken Intention",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.892,
+   "a": "bt-37",
+   "a_title": "Original-versus-Interpolation Reading",
+   "a_book": 4,
+   "b": "bt-125",
+   "b_title": "Encoded-Text Reading",
+   "b_book": 10
   },
   {
-   "score": 0.849,
-   "a": "bt-03",
-   "a_title": "Circle Formation",
-   "a_book": 1,
-   "b": "bt-21",
-   "b_title": "Monopoly Formation",
-   "b_book": 2
+   "score": 0.892,
+   "a": "bt-91",
+   "a_title": "Graded Recognition System",
+   "a_book": 8,
+   "b": "bt-113",
+   "b_title": "Graded Custody of Words and Signs",
+   "b_book": 10
   },
   {
-   "score": 0.849,
-   "a": "bt-03",
-   "a_title": "Circle Formation",
-   "a_book": 1,
-   "b": "bt-22",
-   "b_title": "Secrecy Discipline",
-   "b_book": 2
+   "score": 0.891,
+   "a": "bt-75",
+   "a_title": "Esoteric Dual Language (Claimed)",
+   "a_book": 7,
+   "b": "bt-96",
+   "b_title": "Plain-Sight Signaling (Claimed)",
+   "b_book": 9
   },
   {
-   "score": 0.849,
-   "a": "bt-04",
-   "a_title": "Alternating Mantra",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.891,
+   "a": "bt-106",
+   "a_title": "Mystery-School Transmission",
+   "a_book": 10,
+   "b": "bt-137",
+   "b_title": "Inner Outer Teaching Split",
+   "b_book": 8
   },
   {
-   "score": 0.848,
-   "a": "bt-03",
-   "a_title": "Circle Formation",
-   "a_book": 1,
-   "b": "bt-18",
-   "b_title": "Controlled Opposition",
-   "b_book": 2
+   "score": 0.89,
+   "a": "bt-52",
+   "a_title": "Grade-Staged Symbol Disclosure",
+   "a_book": 5,
+   "b": "bt-91",
+   "b_title": "Graded Recognition System",
+   "b_book": 8
   },
   {
-   "score": 0.847,
-   "a": "bt-01",
-   "a_title": "Banishing Frame",
-   "a_book": 1,
-   "b": "bt-17",
-   "b_title": "Front Structures and Proxies",
-   "b_book": 2
+   "score": 0.89,
+   "a": "bt-91",
+   "a_title": "Graded Recognition System",
+   "a_book": 8,
+   "b": "bt-102",
+   "b_title": "Oath-Penalty Secrecy System (Claimed)",
+   "b_book": 9
   }
  ],
  "bridges": [
@@ -167,6 +175,60 @@
     [
      "bt-01",
      "bt-17"
+    ]
+   ]
+  },
+  {
+   "name": "The correspondence table",
+   "reading": "Planets, metals, organs, letters, and seasons are bound into one table in book after book. What forms is a single reading instrument: balance and polarity judged through the table, never domain by domain.",
+   "pairs": [
+    [
+     "bt-84",
+     "bt-123"
+    ],
+    [
+     "bt-55",
+     "bt-134"
+    ],
+    [
+     "bt-141",
+     "bt-123"
+    ]
+   ]
+  },
+  {
+   "name": "Secrecy as architecture",
+   "reading": "Compartmentation, oath penalties, graded custody of words, and plain-sight signaling recur as one design. What forms is secrecy built like a structure: layers, locks, and decoy surfaces.",
+   "pairs": [
+    [
+     "bt-22",
+     "bt-102"
+    ],
+    [
+     "bt-91",
+     "bt-113"
+    ],
+    [
+     "bt-80",
+     "bt-96"
+    ]
+   ]
+  },
+  {
+   "name": "Reading the corrupted text",
+   "reading": "Original against interpolation, encoded reading through numbers and permutations, and the audit of witnesses converge. What forms is one discipline: never trust the surface until the text survives its own audit.",
+   "pairs": [
+    [
+     "bt-37",
+     "bt-125"
+    ],
+    [
+     "bt-52",
+     "bt-91"
+    ],
+    [
+     "bt-106",
+     "bt-137"
     ]
    ]
   }

@@ -57,6 +57,21 @@ def main():
                 "reading": "Participants sit equidistant around a center; institutions stand as a visible ring while direction sits at the hidden center. What forms is the same geometry: a public circumference, a directing middle.",
                 "pairs": [["bt-03", "bt-17"], ["bt-05", "bt-17"], ["bt-01", "bt-17"]],
             },
+            {
+                "name": "The correspondence table",
+                "reading": "Planets, metals, organs, letters, and seasons are bound into one table in book after book. What forms is a single reading instrument: balance and polarity judged through the table, never domain by domain.",
+                "pairs": [["bt-84", "bt-123"], ["bt-55", "bt-134"], ["bt-141", "bt-123"]],
+            },
+            {
+                "name": "Secrecy as architecture",
+                "reading": "Compartmentation, oath penalties, graded custody of words, and plain-sight signaling recur as one design. What forms is secrecy built like a structure: layers, locks, and decoy surfaces.",
+                "pairs": [["bt-22", "bt-102"], ["bt-91", "bt-113"], ["bt-80", "bt-96"]],
+            },
+            {
+                "name": "Reading the corrupted text",
+                "reading": "Original against interpolation, encoded reading through numbers and permutations, and the audit of witnesses converge. What forms is one discipline: never trust the surface until the text survives its own audit.",
+                "pairs": [["bt-37", "bt-125"], ["bt-52", "bt-91"], ["bt-106", "bt-137"]],
+            },
         ],
         "note": "Scores are e5 cosine similarities between derived technique cards. Bridges are readings of the strongest measured pairs, in derived words; they assert structure, not historical fact.",
     }

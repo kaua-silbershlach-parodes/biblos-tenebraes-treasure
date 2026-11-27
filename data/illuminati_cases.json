@@ -1,12 +1,17 @@
 {
- "book": 2,
+ "books": [
+  2,
+  7,
+  9
+ ],
  "sector": "02-luciferianism",
  "subfolder": "1995 - Iluminattis",
- "path": "02-luciferianism/1995 - Iluminattis/book-2",
- "pages": 292,
- "words": 204330,
- "chunks": 13179,
- "evidence_note": "Cases catalog the book claims in own words; many rest on informants and inference, so each case keeps its gaps visible.",
+ "book_pages": {
+  "2": 292,
+  "7": 304,
+  "9": 588
+ },
+ "evidence_note": "Cases catalog the books claims in own words; many rest on informants, photographs, and inference, so each case keeps its gaps visible.",
  "cases": [
   {
    "name": "Astor",
@@ -19,7 +24,8 @@
     "bt-17",
     "bt-21",
     "bt-19"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Bundy",
@@ -31,7 +37,8 @@
    "techniques": [
     "bt-20",
     "bt-18"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Collins/Todd",
@@ -43,7 +50,8 @@
    "techniques": [
     "bt-22",
     "bt-16"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "DuPont",
@@ -56,7 +64,8 @@
     "bt-16",
     "bt-21",
     "bt-19"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Freeman/Prieure",
@@ -69,7 +78,8 @@
     "bt-16",
     "bt-20",
     "bt-22"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Kennedy",
@@ -80,7 +90,8 @@
    "pattern": "Surname frequency blocks simple identification, so the search shifts to intermarriage clusters and aristocratic branches.",
    "techniques": [
     "bt-16"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Li/Triad",
@@ -93,7 +104,8 @@
     "bt-17",
     "bt-22",
     "bt-26"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Onassis",
@@ -105,7 +117,8 @@
    "techniques": [
     "bt-23",
     "bt-21"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Rockefeller",
@@ -118,7 +131,8 @@
     "bt-24",
     "bt-17",
     "bt-19"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Rothschild",
@@ -131,7 +145,8 @@
     "bt-23",
     "bt-16",
     "bt-21"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Disney",
@@ -143,7 +158,8 @@
    "techniques": [
     "bt-27",
     "bt-19"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Reynolds",
@@ -155,7 +171,8 @@
    "techniques": [
     "bt-24",
     "bt-17"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "McDonald",
@@ -167,7 +184,8 @@
    "techniques": [
     "bt-16",
     "bt-17"
-   ]
+   ],
+   "book": 2
   },
   {
    "name": "Krupp",
@@ -180,6 +198,179 @@
     "bt-17",
     "bt-19",
     "bt-22"
+   ],
+   "book": 2
+  },
+  {
+   "name": "Hypothetical structured system",
+   "book": 7,
+   "pages": [
+    82,
+    86
+   ],
+   "pattern": "The book own worked example walks through layered access, numbered sections, and paired-card codes; explicitly hypothetical.",
+   "techniques": [
+    "bt-73",
+    "bt-71"
+   ]
+  },
+  {
+   "name": "Evangelist case",
+   "book": 7,
+   "pages": [
+    116,
+    136
+   ],
+   "pattern": "Staff policy, referrals, memberships, and image management are claimed as a front pattern; anecdotal grounds, gaps visible.",
+   "techniques": [
+    "bt-75",
+    "bt-79"
+   ]
+  },
+  {
+   "name": "Pacifist-community cover case",
+   "book": 7,
+   "pages": [
+    136,
+    141
+   ],
+   "pattern": "Secrecy culture and wartime hospital service are presented as an infiltration route; claim pattern only.",
+   "techniques": [
+    "bt-79"
+   ]
+  },
+  {
+   "name": "Alien-script person cases",
+   "book": 7,
+   "pages": [
+    109,
+    111
+   ],
+   "pattern": "Three person cases are read through alien-themed scripts as alleged cover narratives.",
+   "techniques": [
+    "bt-74"
+   ]
+  },
+  {
+   "name": "Celebrity milieu case",
+   "book": 7,
+   "pages": [
+    285,
+    287
+   ],
+   "pattern": "Fame, entourage, contracts, and public image are described as a control environment.",
+   "techniques": [
+    "bt-79",
+    "bt-80"
+   ]
+  },
+  {
+   "name": "Handler-death exposure",
+   "book": 7,
+   "pages": [
+    285,
+    285
+   ],
+   "pattern": "Loss of a handler is presented as the moment control weakens and secrets surface.",
+   "techniques": [
+    "bt-81"
+   ]
+  },
+  {
+   "name": "Hidden Hand series",
+   "book": 9,
+   "pages": [
+    49,
+    75
+   ],
+   "pattern": "Portraits of presidents, soldiers, royalty, and financiers are presented as instances of one sign; intent inferred from pose.",
+   "techniques": [
+    "bt-94",
+    "bt-96"
+   ]
+  },
+  {
+   "name": "Fellow Craft series",
+   "book": 9,
+   "pages": [
+    76,
+    90
+   ],
+   "pattern": "Religious and political figures are presented as displaying a penal sign; photo-based assertion, gaps visible.",
+   "techniques": [
+    "bt-98"
+   ]
+  },
+  {
+   "name": "Bush sign controversy",
+   "book": 9,
+   "pages": [
+    114,
+    118
+   ],
+   "pattern": "Inauguration and magazine photos argue a sports explanation is insufficient for repeated family sign use; ambiguity unresolved.",
+   "techniques": [
+    "bt-96"
+   ]
+  },
+  {
+   "name": "Nixon resignation",
+   "book": 9,
+   "pages": [
+    183,
+    189
+   ],
+   "pattern": "A final public gesture is interpreted as a dueguard and tied to a fall-from-power narrative.",
+   "techniques": [
+    "bt-98"
+   ]
+  },
+  {
+   "name": "Morgan and Adams",
+   "book": 9,
+   "pages": [
+    183,
+    186
+   ],
+   "pattern": "An exposer murder and anti-Masonic writings serve as the historical warning case for secrecy enforcement.",
+   "techniques": [
+    "bt-102"
+   ]
+  },
+  {
+   "name": "Oval Office eagle",
+   "book": 9,
+   "pages": [
+    241,
+    243
+   ],
+   "pattern": "Opposite-facing eagles on desk and rug are treated as a combined double-headed emblem in plain sight.",
+   "techniques": [
+    "bt-100"
+   ]
+  },
+  {
+   "name": "History retouching",
+   "book": 9,
+   "pages": [
+    567,
+    567
+   ],
+   "pattern": "Paired Soviet-era photographs argue purged figures were removed from images and archives.",
+   "techniques": [
+    "bt-104"
+   ]
+  },
+  {
+   "name": "Emblem substitution",
+   "book": 9,
+   "pages": [
+    571,
+    571
+   ],
+   "pattern": "Square-and-compass variants with substituted centers are read as doctrinal replacements.",
+   "techniques": [
+    "bt-105"
    ]
   }
  ],
@@ -188,6 +379,8 @@
   "Namesake ambiguity affects several family cases; similar surnames are not proof of relation.",
   "OCR noise makes some names, figures, and dates unreliable as extracted.",
   "Ritual descriptions are fragmentary: roles and symbols appear without procedures, durations, or safeguards.",
-  "Internal article page numbers restart; PDF page markers are the reliable locator."
+  "Internal article page numbers restart; PDF page markers are the reliable locator.",
+  "Book 7 claims rest heavily on unnamed witnesses and assertion; medical and technical claims lack controlled evidence in the text.",
+  "Book 9 visual claims depend on photographs that text extraction cannot verify; intent is often inferred from gesture."
  ]
 }

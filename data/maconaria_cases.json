@@ -1,0 +1,527 @@
+{
+ "books": [
+  3,
+  4,
+  5,
+  6,
+  8,
+  10
+ ],
+ "sector": "02-luciferianism",
+ "subfolder": "Maçonaria",
+ "book_pages": {
+  "3": 11,
+  "4": 20,
+  "5": 86,
+  "6": 287,
+  "8": 304,
+  "10": 592
+ },
+ "evidence_note": "Cases catalog the books claims in own words; speculative identifications and OCR noise keep each case gaps visible.",
+ "cases": [
+  {
+   "name": "Federation assembly",
+   "book": 3,
+   "pages": [
+    1,
+    4
+   ],
+   "pattern": "Lodges federate through assembly and short-mandate election, producing unity by meeting rather than command.",
+   "techniques": [
+    "bt-28",
+    "bt-29"
+   ]
+  },
+  {
+   "name": "Confessional-political enabling",
+   "book": 3,
+   "pages": [
+    3,
+    7
+   ],
+   "pattern": "Political and confessional conditions enable the federation to form and spread; legitimacy follows elite recruitment and respectability reform.",
+   "techniques": [
+    "bt-30"
+   ]
+  },
+  {
+   "name": "Founding-date dispute",
+   "book": 3,
+   "pages": [
+    10,
+    11
+   ],
+   "pattern": "Minutes challenge the inherited founding date, showing archive evidence correcting origin legend.",
+   "techniques": [
+    "bt-35"
+   ]
+  },
+  {
+   "name": "Institutional capture",
+   "book": 4,
+   "pages": [
+    4,
+    7
+   ],
+   "pattern": "An empire absorbs a movement by adopting its symbols and offices, turning opposition into administration.",
+   "techniques": [
+    "bt-42",
+    "bt-43"
+   ]
+  },
+  {
+   "name": "Suppressed lineage",
+   "book": 4,
+   "pages": [
+    5,
+    8
+   ],
+   "pattern": "A lineage survives suppression by custodial transmission through hidden carriers.",
+   "techniques": [
+    "bt-36",
+    "bt-41"
+   ]
+  },
+  {
+   "name": "Brazilian Masonry after 1964",
+   "book": 4,
+   "pages": [
+    16,
+    20
+   ],
+   "pattern": "Decline is attributed to division, exposure, and spying rather than doctrine, a case of fruit-test reading.",
+   "techniques": [
+    "bt-45"
+   ]
+  },
+  {
+   "name": "Pythagorean school",
+   "book": 5,
+   "pages": [
+    25,
+    32
+   ],
+   "pattern": "The school case shows triangle equality and staged disclosure operating as formation discipline.",
+   "techniques": [
+    "bt-51",
+    "bt-52"
+   ]
+  },
+  {
+   "name": "Hiram",
+   "book": 5,
+   "pages": [
+    78,
+    86
+   ],
+   "pattern": "The builder legend is read through the number system as disharmony resolved by a commander figure.",
+   "techniques": [
+    "bt-55"
+   ]
+  },
+  {
+   "name": "The hoax case",
+   "book": 6,
+   "pages": [
+    1,
+    40
+   ],
+   "pattern": "An invented Luciferian order with a female witness gains papal approval, then collapses under confession and audit.",
+   "techniques": [
+    "bt-58",
+    "bt-68"
+   ]
+  },
+  {
+   "name": "The archbishop witness",
+   "book": 6,
+   "pages": [
+    74,
+    110
+   ],
+   "pattern": "A high-degree witness account is dismantled by numerology checks and credibility audit.",
+   "techniques": [
+    "bt-61",
+    "bt-59"
+   ]
+  },
+  {
+   "name": "The doctor-infiltrator",
+   "book": 6,
+   "pages": [
+    110,
+    145
+   ],
+   "pattern": "Purchased degrees and escalating evocations are audited as a fabricated infiltration narrative.",
+   "techniques": [
+    "bt-61",
+    "bt-60"
+   ]
+  },
+  {
+   "name": "The converted adept",
+   "book": 6,
+   "pages": [
+    145,
+    180
+   ],
+   "pattern": "Lineage-legend authority, schism, and publishing are traced as the real engines of a conversion testimony.",
+   "techniques": [
+    "bt-62",
+    "bt-67"
+   ]
+  },
+  {
+   "name": "The strongest witness",
+   "book": 6,
+   "pages": [
+    216,
+    250
+   ],
+   "pattern": "The best witness for the alleged order fails identifiability and document checks, collapsing dependent claims.",
+   "techniques": [
+    "bt-65",
+    "bt-69"
+   ]
+  },
+  {
+   "name": "Watchers and Nephilim",
+   "book": 8,
+   "pages": [
+    35,
+    44
+   ],
+   "pattern": "The descent distributes magical arts to humanity and frames the fall as incarnation rather than failure.",
+   "techniques": [
+    "bt-83",
+    "bt-82"
+   ]
+  },
+  {
+   "name": "Yazidi peacock standard",
+   "book": 8,
+   "pages": [
+    20,
+    26
+   ],
+   "pattern": "Peacock standard, sacred wells, and counterclockwise circumambulation carry an angelic cult pattern across cultures.",
+   "techniques": [
+    "bt-84",
+    "bt-87"
+   ]
+  },
+  {
+   "name": "Seth Osiris Horus",
+   "book": 8,
+   "pages": [
+    84,
+    87
+   ],
+   "pattern": "Envy, coffin trap, dismemberment, and recovery model older gods becoming demons under a newer order.",
+   "techniques": [
+    "bt-90",
+    "bt-92"
+   ]
+  },
+  {
+   "name": "Bavarian Illuminati",
+   "book": 8,
+   "pages": [
+    96,
+    98
+   ],
+   "pattern": "A secret order with eye seal and graded illumination survives suppression inside conspiracy memory.",
+   "techniques": [
+    "bt-91"
+   ]
+  },
+  {
+   "name": "Hiram Abiff",
+   "book": 8,
+   "pages": [
+    120,
+    122
+   ],
+   "pattern": "The master refuses the secret three times, is buried under acacia, found, and raised.",
+   "techniques": [
+    "bt-92",
+    "bt-91"
+   ]
+  },
+  {
+   "name": "Rosicrucian brethren",
+   "book": 8,
+   "pages": [
+    110,
+    112
+   ],
+   "pattern": "A hidden society bound by six rules leaves a secret tomb discovered generations later.",
+   "techniques": [
+    "bt-88"
+   ]
+  },
+  {
+   "name": "Sheba and Solomon",
+   "book": 8,
+   "pages": [
+    137,
+    143
+   ],
+   "pattern": "Riddle-testing exchanges wealth for wisdom and links lineage, ark, and emerald.",
+   "techniques": [
+    "bt-90"
+   ]
+  },
+  {
+   "name": "Delphi oracle",
+   "book": 10,
+   "pages": [
+    153,
+    156
+   ],
+   "pattern": "Purification, vapor induction, scribal recording, interpretation, and poetic publication are separated into roles.",
+   "techniques": [
+    "bt-107"
+   ]
+  },
+  {
+   "name": "Trophonius cave",
+   "book": 10,
+   "pages": [
+    157,
+    159
+   ],
+   "pattern": "Cave descent, honey-cake offering, memory waters, written testimony, and priestly interpretation form the case.",
+   "techniques": [
+    "bt-108"
+   ]
+  },
+  {
+   "name": "Hiram",
+   "book": 10,
+   "pages": [
+    199,
+    203
+   ],
+   "pattern": "Three attackers kill the master for withholding the word; acacia marks the burial and searchers raise the body.",
+   "techniques": [
+    "bt-113"
+   ]
+  },
+  {
+   "name": "Phoenix cycle",
+   "book": 10,
+   "pages": [
+    238,
+    239
+   ],
+   "pattern": "The long-lived bird dies, renews, and priests verify the cycle against date records.",
+   "techniques": [
+    "bt-115"
+   ]
+  },
+  {
+   "name": "Apis bull",
+   "book": 10,
+   "pages": [
+    242,
+    243
+   ],
+   "pattern": "A marked animal is consecrated, processed, mourned, and replaced by a newly recognized bull.",
+   "techniques": [
+    "bt-115"
+   ]
+  },
+  {
+   "name": "Faust pact",
+   "book": 10,
+   "pages": [
+    273,
+    275
+   ],
+   "pattern": "An unprotected invocation forces a pact after spirits are tested by speed before one is accepted.",
+   "techniques": [
+    "bt-117"
+   ]
+  },
+  {
+   "name": "Eleusinian lesser and greater",
+   "book": 10,
+   "pages": [
+    51,
+    56
+   ],
+   "pattern": "A nine-day sequence of lesser and greater rites frames descent and return as staged admission.",
+   "techniques": [
+    "bt-119",
+    "bt-122"
+   ]
+  },
+  {
+   "name": "Pyramid initiation",
+   "book": 10,
+   "pages": [
+    87,
+    98
+   ],
+   "pattern": "Chambers, passages, and a riddle pattern structure a symbolic second birth inside the monument.",
+   "techniques": [
+    "bt-120"
+   ]
+  },
+  {
+   "name": "Isis and Osiris reassembly",
+   "book": 10,
+   "pages": [
+    99,
+    109
+   ],
+   "pattern": "Scattering, search, and reassembly restore the body with the missing part substituted and marked.",
+   "techniques": [
+    "bt-121"
+   ]
+  },
+  {
+   "name": "Bembine Table",
+   "book": 10,
+   "pages": [
+    136,
+    148
+   ],
+   "pattern": "Triads, a central throne figure, and upper governors organize a layered reading with competing interpretations kept open.",
+   "techniques": [
+    "bt-118"
+   ]
+  },
+  {
+   "name": "Vault discovery",
+   "book": 10,
+   "pages": [
+    380,
+    381
+   ],
+   "pattern": "A seven-sided founder vault with altar, plates, and books is discovered after 120 years; the slice marks it as lacking historical corroboration.",
+   "techniques": [
+    "bt-127"
+   ]
+  },
+  {
+   "name": "Flamel book and master",
+   "book": 10,
+   "pages": [
+    412,
+    422
+   ],
+   "pattern": "Images stay opaque until a teacher explains part of them, after which the work is completed with his wife.",
+   "techniques": [
+    "bt-125",
+    "bt-129"
+   ]
+  },
+  {
+   "name": "Paracelsus reform",
+   "book": 10,
+   "pages": [
+    412,
+    422
+   ],
+   "pattern": "Reform by observation, experience, and vernacular teaching against inherited dogma.",
+   "techniques": [
+    "bt-129"
+   ]
+  },
+  {
+   "name": "Alchemical wedding",
+   "book": 10,
+   "pages": [
+    464,
+    475
+   ],
+   "pattern": "A seven-day narrative ends in homunculi, knighthood, and five articles, read as graded transformation.",
+   "techniques": [
+    "bt-131"
+   ]
+  },
+  {
+   "name": "Essene community",
+   "book": 10,
+   "pages": [
+    513,
+    524
+   ],
+   "pattern": "Three degrees, a probation year, crafts, agriculture, healing, and guarded doctrine structure the community.",
+   "techniques": [
+    "bt-133"
+   ]
+  },
+  {
+   "name": "Xibalba trials",
+   "book": 10,
+   "pages": [
+    564,
+    570
+   ],
+   "pattern": "Twin heroes pass seven trials, die, return as fish and magicians, and kill the death lords.",
+   "techniques": [
+    "bt-131"
+   ]
+  },
+  {
+   "name": "Midewiwin records",
+   "book": 10,
+   "pages": [
+    567,
+    568
+   ],
+   "pattern": "Four degrees, medicine-bag initiation, birch-bark records, and healing instruction carry the system.",
+   "techniques": [
+    "bt-136"
+   ]
+  },
+  {
+   "name": "Magdalene exile",
+   "book": 8,
+   "pages": [
+    232,
+    236
+   ],
+   "pattern": "Royal priestess and heir-bearer reading, exile to France, Sara tradition, and persecution memory preserve the lineage.",
+   "techniques": [
+    "bt-138",
+    "bt-137"
+   ]
+  },
+  {
+   "name": "Templar excavation",
+   "book": 8,
+   "pages": [
+    239,
+    251
+   ],
+   "pattern": "A public protective mission is presented as cover for temple excavation, banking wealth, and recovered deposits.",
+   "techniques": [
+    "bt-140"
+   ]
+  },
+  {
+   "name": "Memphis-Mizraim charter",
+   "book": 8,
+   "pages": [
+    248,
+    250
+   ],
+   "pattern": "An Egyptianizing rite passes by charter and recombines into a modern occult order.",
+   "techniques": [
+    "bt-140",
+    "bt-139"
+   ]
+  }
+ ],
+ "gaps": [
+  "Many historical identifications are speculative and depend on secondary occult literature rather than primary evidence.",
+  "Similar names, symbols, and myths are often treated as transmission without sufficient proof.",
+  "OCR noise garbles names, dates, and foreign terms in several books.",
+  "Most material is symbolic or historical; procedures, durations, and safeguards are largely absent.",
+  "Printed page numbers differ from PDF page markers; markers are the reliable locator."
+ ]
+}

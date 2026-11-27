@@ -28,8 +28,12 @@ def main():
     corpus = json.load(open(os.path.join(ROOT, "corpus.json")))
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
-    chunks2 = json.load(open(os.path.join(ROOT, "data", "book2_chunks.json")))
-    chunk_sets = {1: {c["id"]: c for c in chunks}, 2: {c["id"]: c for c in chunks2}}
+    chunk_sets = {1: {c["id"]: c for c in chunks}}
+    for n in range(2, 11):
+        path = os.path.join(ROOT, "data", f"book{n}_chunks.json")
+        if os.path.exists(path):
+            loaded = json.load(open(path))
+            chunk_sets[n] = {c["id"]: c for c in loaded}
     by_id = chunk_sets[1]
     failures = 0
 

@@ -105,6 +105,13 @@ def main():
         help="search the second book chunks (data/book2_chunks.json) instead of the technique cards",
     )
     parser.add_argument(
+        "--bookN",
+        type=int,
+        default=None,
+        metavar="N",
+        help="search book N chunks (data/bookN_chunks.json) instead of the technique cards",
+    )
+    parser.add_argument(
         "--sector",
         default=None,
         help="route the search to one sector (e.g. 01-traditional-satanism)",
@@ -115,9 +122,25 @@ def main():
     query_vec = embed(session, [args.query])[0]
     query_vec = query_vec / np.linalg.norm(query_vec)
 
-    if args.book or args.book2:
-        chunk_file = "book2_chunks.json" if args.book2 else "book_chunks.json"
-        chunk_path = "02-luciferianism/1995 - Iluminattis/book-2" if args.book2 else "01-traditional-satanism/Demonologia/Lilith/book-1"
+    book_n = args.bookN or (2 if args.book2 else (1 if args.book else None))
+    if book_n is not None:
+        book_paths = {
+            1: "01-traditional-satanism/Demonologia/Lilith/book-1",
+            2: "02-luciferianism/1995 - Iluminattis/book-2",
+            3: "02-luciferianism/Maçonaria/book-3",
+            4: "01-traditional-satanism/Maçonaria/book-4",
+            5: "02-luciferianism/Maçonaria/book-5",
+            6: "02-luciferianism/Maçonaria/book-6",
+            7: "02-luciferianism/1995 - Iluminattis/book-7",
+            8: "02-luciferianism/Maçonaria/book-8",
+            9: "02-luciferianism/1995 - Iluminattis/book-9",
+            10: "02-luciferianism/Maçonaria/book-10",
+        }
+        if book_n not in book_paths:
+            print(f"no chunks for book {book_n}")
+            return 1
+        chunk_file = "book_chunks.json" if book_n == 1 else f"book{book_n}_chunks.json"
+        chunk_path = book_paths[book_n]
         with open(os.path.join(ROOT, "data", chunk_file), encoding="utf-8") as f:
             chunks = json.load(f)
         doc_vecs = embed_cached(session, args.model, [c["text"] for c in chunks])

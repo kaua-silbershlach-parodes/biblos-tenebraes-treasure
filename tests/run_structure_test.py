@@ -11,8 +11,11 @@ def main():
     corpus = json.load(open(os.path.join(ROOT, "corpus.json")))
     practices = json.load(open(os.path.join(ROOT, "practices.json")))
     chunks = json.load(open(os.path.join(ROOT, "data", "book_chunks.json")))
-    chunks2 = json.load(open(os.path.join(ROOT, "data", "book2_chunks.json")))
-    chunk_sets = {1: {c["id"] for c in chunks}, 2: {c["id"] for c in chunks2}}
+    chunk_sets = {1: {c["id"] for c in chunks}}
+    for n in range(2, 11):
+        path = os.path.join(ROOT, "data", f"book{n}_chunks.json")
+        if os.path.exists(path):
+            chunk_sets[n] = {c["id"] for c in json.load(open(path))}
     sector_tree = json.load(open(os.path.join(ROOT, "data", "sector_tree.json")))
     library_metrics = json.load(open(os.path.join(ROOT, "data", "library_metrics.json")))
     failures = 0
@@ -27,7 +30,13 @@ def main():
         for c in corpus
     ))
     check("every card names book and sector", all(
-        (c["book"], c["sector"]) in {(1, "01-traditional-satanism"), (2, "02-luciferianism")}
+        (c["book"], c["sector"]) in {
+            (1, "01-traditional-satanism"), (2, "02-luciferianism"),
+            (3, "02-luciferianism"), (4, "01-traditional-satanism"),
+            (5, "02-luciferianism"), (6, "02-luciferianism"),
+            (7, "02-luciferianism"), (8, "02-luciferianism"),
+            (9, "02-luciferianism"), (10, "02-luciferianism"),
+        }
         for c in corpus
     ))
     orders = [p["order"] for p in practices["phases"]]
@@ -75,21 +84,32 @@ def main():
         library_metrics["service_levels"]["availability_target_percent"] == 99.9
         and library_metrics["service_levels"]["measured_baseline"]["engine_test_result"] == "30/30"
     ))
-    cases = json.load(open(os.path.join(ROOT, "data", "illuminati_cases.json")))
-    check("illuminati cases bind real techniques and pages", (
-        cases["book"] == 2 and len(cases["cases"]) == 14 and cases["gaps"]
-        and all(set(case["techniques"]) <= card_ids for case in cases["cases"])
-        and all(1 <= case["pages"][0] <= case["pages"][1] <= cases["pages"] for case in cases["cases"])
-    ))
+    def cases_ok(fname):
+        data = json.load(open(os.path.join(ROOT, "data", fname)))
+        book_pages = {int(k): v for k, v in data["book_pages"].items()}
+        return (
+            data["cases"] and data["gaps"]
+            and all(set(case["techniques"]) <= card_ids for case in data["cases"])
+            and all(case["book"] in book_pages for case in data["cases"])
+            and all(1 <= case["pages"][0] <= case["pages"][1] <= book_pages[case["book"]]
+                    for case in data["cases"])
+        )
+
+    check("illuminati cases bind real techniques and pages", cases_ok("illuminati_cases.json"))
+    check("maconaria cases bind real techniques and pages", cases_ok("maconaria_cases.json"))
     crossing = json.load(open(os.path.join(ROOT, "data", "crossing.json")))
+    books = sorted({c["book"] for c in corpus})
+    expected_pairs = sum(
+        1 for i, a in enumerate(corpus) for b in corpus[i + 1:] if a["book"] != b["book"]
+    )
     check("crossing pairs bind real techniques across books", (
-        crossing["books_crossed"] == [1, 2] and crossing["pairs_measured"] == 180
+        crossing["books_crossed"] == books and crossing["pairs_measured"] == expected_pairs
         and all(p["a"] in card_ids and p["b"] in card_ids and p["a_book"] != p["b_book"]
                 for p in crossing["strongest_pairs"])
         and all(a in card_ids and b in card_ids
                 for bridge in crossing["bridges"] for a, b in bridge["pairs"])
     ))
-    print(f"{15 - failures}/15 structure checks pass")
+    print(f"{16 - failures}/16 structure checks pass")
     return 0 if failures == 0 else 1
 
 

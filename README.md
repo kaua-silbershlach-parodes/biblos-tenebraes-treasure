@@ -8,7 +8,7 @@ published — only the totals and the sector structure. See
 
 The library is read one book at a time, smallest first. Each book becomes a
 set of technique cards in `corpus.json`, and the engine ranks those cards
-against a plain-words question. Two books are in: 27 techniques.
+against a plain-words question. Ten books are in: 141 techniques.
 
 ## The engine
 
@@ -87,10 +87,81 @@ techniques:
 - Sealing and Oath Binding — vows sealed through exchanged objects.
 - Wholesome-Front Deception — a trusted brand lowering the guard.
 
+## Techniques from books 3 to 10 — Maçonaria and 1995 - Iluminattis
+
+The six Maçonaria text PDFs (five in Luciferianism, one in Traditional
+Satanism) and the two remaining 1995 - Iluminattis books were read whole,
+smallest first, and converted into sentence-level chunks
+(`data/book3_chunks.json` … `data/book10_chunks.json`). Their cases are
+catalogued in `data/maconaria_cases.json` (40 cases) and
+`data/illuminati_cases.json` (28 cases) — claims in derived words, with
+evidence gaps kept visible.
+
+- **Book 3** — Luciferianism / Maçonaria, 11 pages, 312 chunks, 8
+  techniques: Federation by Assembly, Archival Codification, Regularity
+  as Exported Standard, Temple Symbolism as Moral Template, Lodge as
+  Workshop, Admission Testing by Greeting, Degree Ladder, Founding-Date
+  Challenge by Minutes.
+- **Book 4** — Traditional Satanism / Maçonaria, 20 pages, 746 chunks, 10
+  techniques: Source-Trail Argument, Original-versus-Interpolation
+  Reading, Initiatory Equivalence Mapping, Sacrificed-God Genealogy,
+  Symbol Decoding, Egregore Formation, Absorption and Demonization,
+  Creed as Political Code, Catechism Conditioning Audit, Fruit Test.
+- **Book 5** — Luciferianism / Maçonaria, 86 pages, 2,481 chunks, 12
+  techniques: Zero as Latent Field, Point in Circle Manifestation,
+  Involution and Evolution, Polarity as Instruction, Third-Term Triangle
+  Formation, Triangle Equality Test, Grade-Staged Symbol Disclosure,
+  Four as Materialization, Five as Anti-Equilibrium, Septenary
+  Correspondence, Eightfold Conduct Audit, Decalogue as Lodge Ethics.
+- **Book 6** — Luciferianism / Maçonaria, 287 pages, 4,247 chunks, 12
+  techniques: Evidence Taxonomy First, Chronology as Falsification,
+  Plagiarism Fingerprinting, Witness Credibility Audit, Motive Audit,
+  Language Forensics, Invented Geography Test, List Falsification by
+  Denial, Place and Jurisdiction Verification, Source-Subtraction Audit,
+  Authority Laundering, Denial-Proof Design.
+- **Book 7** — Luciferianism / 1995 - Iluminattis, 304 pages, 13,222
+  chunks, 12 techniques, all catalogued as claimed patterns with their
+  evidence gaps: Assessment Before Structuring, Hidden Core with Decoy
+  Fronts, Double-Bind Split Model, Layered Access Codes, Story-Script
+  Mapping, Esoteric Dual Language, Gatekeeper Layering, Internal-World
+  Structuring, Defense in Depth and Backups, Milieu Control, Media
+  Trigger Catalog, Disbelief Barrier.
+- **Book 8** — Luciferianism / Maçonaria, 304 pages, 5,380 chunks, 17
+  techniques: Cross-Cultural Genealogy of Angelology, Fall as Deliberate
+  Incarnation, Planetary Correspondence Mapping, Hierarchical Ascent
+  through Spheres, Threefold Spiritual Typology, Sacred-Center Axis
+  Construction, Preservation through Catastrophe, Liminal Crossing,
+  Twin-Pillar Polarity Framing, Graded Recognition System,
+  Death-and-Raising Pattern, Serpent as Teacher, Inner Outer Teaching
+  Split, Lineage Preservation through Exile, Durable-Media Preservation,
+  Charter-Based Transmission, Archangel Correspondence Table.
+- **Book 9** — Luciferianism / 1995 - Iluminattis, 588 pages, 6,350
+  chunks, 12 techniques, claimed patterns catalogued with gaps:
+  Visual-Evidence Accumulation, Secrecy Architecture, Plain-Sight
+  Signaling, Handshake Recognition Test, Penal Signs and Due Guards,
+  X as Transformation Marker, Double-Headed Eagle Duality, Great Seal
+  Decoding, Oath-Penalty Secrecy System, Triangle Polarity System,
+  Photo-Caption Case Method, Star Talisman System.
+- **Book 10** — Luciferianism / Maçonaria, 592 pages, 19,185 chunks, 31
+  techniques: Mystery-School Transmission, Mediated Oracle Pipeline,
+  Cave-Descent Incubation, Graded Initiation with Delayed Access,
+  Aphorism as Compressed Instruction, Letter-Value Analysis, Body-as-Map
+  Teaching, Graded Custody of Words and Signs, Ratio-Based Harmony,
+  Emblem Selection by Observed Habit, Tree as Systems Diagram,
+  Protective-Circle Construction, Two-Layer Encoding, Trial-Gated
+  Admission, Architecture as Curriculum, Fragment Inventory and
+  Reassembly, Descent Stripping and Return, Correspondence-Table Method,
+  Gate and Ring Ascent, Encoded-Text Reading, Temple-Body
+  Internalization, Hidden-Order Operating Model, Alchemical Process
+  Ladders, Operator-Qualification Rule, Color-Sequence Reading,
+  Seven-Stage Initiation Journey, Cipher Taxonomy Before Decoding,
+  Three-Temple Mapping, Sevenfold Ascent Mapping, Guardian-Spirit Quest,
+  Pictographic Degree Records.
+
 ## The crossing — what forms between the books
 
-`tools/cross_books.py` embeds every technique card and measures the 180
-cross-book pairs (`data/crossing.json`). Three bridges form:
+`tools/cross_books.py` embeds every technique card and measures the 8,761
+cross-book pairs (`data/crossing.json`). Six bridges form:
 
 - **The sealed boundary** — the rite opens and closes with a banishing;
   the order binds vows with seals and oaths. One operation at two scales:
@@ -101,6 +172,15 @@ cross-book pairs (`data/crossing.json`). Three bridges form:
 - **The circle and the front** — participants equidistant around a
   center; institutions as a visible ring with direction at the hidden
   middle. A public circumference, a directing center.
+- **The correspondence table** — planets, metals, organs, letters, and
+  seasons bound into one table in book after book. One reading
+  instrument: balance and polarity judged through the table.
+- **Secrecy as architecture** — compartmentation, oath penalties, graded
+  custody of words, and plain-sight signaling recur as one design:
+  layers, locks, and decoy surfaces.
+- **Reading the corrupted text** — original against interpolation,
+  encoded reading, and the audit of witnesses converge on one discipline:
+  never trust the surface until the text survives its own audit.
 
 ## The engine applied to itself
 
@@ -118,10 +198,10 @@ The second book's techniques, turned on the engine that carries them:
 
 ## Verified
 
-- Local engine: 54/54 known questions rank their technique first, under
+- Local engine: 282/282 known questions rank their technique first, under
   both models.
 - Reading control (`tools/reading_control.py`): every one of the first
-  book's 46 chunks is mapped to a phase or declared, every one of the 27
+  book's 46 chunks is mapped to a phase or declared, every one of the 141
   cards is supported by its own provenance chunks in its own book, and
   every named tool appears in the chunks its phase cites — PASS.
 - Full Oracle suite (`tests/run_full_suite_linux.py`, the same suite that
@@ -136,8 +216,8 @@ The second book's techniques, turned on the engine that carries them:
 - Whole-book search: over the 46 chunks of the complete first book, the
   engine returns the exact passage with its chunk and page, and every
   result carries the full path
-  `01-traditional-satanism/Demonologia/Lilith/book-1`. The second book's
-  13,179 chunks search the same way under
-  `02-luciferianism/1995 - Iluminattis/book-2` (`--book2`).
+  `01-traditional-satanism/Demonologia/Lilith/book-1`. Every book searches
+  the same way (`--bookN N`): 65,148 chunks across the ten books, each
+  result carrying its sector, subfolder, and book path.
 
 Copyright (c) A Elite Estrangeira.
