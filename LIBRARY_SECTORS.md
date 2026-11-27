@@ -18,6 +18,54 @@ and the sector structure are shown.
 | Library root (unfiled) | 2 | 0.01% | |
 | **Library total** | **17,927** | **100%** | |
 
+## Subfolders by sector
+
+Each sector is divided into subfolders. Book names are never published;
+sector and subfolder are the location identity of every book.
+
+**Traditional Satanism (base) — 177 entries, 19 subfolders**: Demonologia
+60 · Magia 34 · - Outros 14 · Bruxaria e Esoterismo 12 · Pactos 7 ·
+Magia Sexual 7 · Kabbalah 6 · Rituais 6 · Egito 4 · Hermetismo 4 ·
+São Cipriano 4 · Divinação 3 · Babilônia 2 · Quimbanda 2 · Sumeria 2 ·
+Wicca 2 · Maçonaria 1 · Mitologia 1 · Oráculos 1.
+
+**Luciferianism (path of light) — 107 entries, 23 subfolders**: A∴A∴ /
+Thelema 24 · Assembly of Light Bearers 19 · Gnosticismo 13 · - Outros 11 ·
+Maçonaria 5 · The Order Of Phospurus 4 · O.T.O 3 · Iluminattis 3 · Ordo
+Saturni 2 · Colegiado da Luz Hermética 2 · Hermetismo 2 · Black Order of
+the Dragon 2 · Greater Church of Lucifer 2 · Temple of The Ancient Dragon
+2 · Caminhos da Tradição 2 · Golden Dawn 1 · Escola de Lúcifer 1 · Lilin
+Society 1 · Ordem dos Rostos Revelados 1 · Ordem Martinista 1 · Ordem
+Rosacruz 1 · OSFLU 1 · TOTH 1.
+
+**Modern Satanism (middle path) — 16,406 entries, 15 subfolders**:
+Morbitvs Vividvs 16,237 · Goetia 55 · - Outros 35 · Church Of Satan 22 ·
+Meditação e Yoga 21 · Joy Of Satan 15 · Filosofia 4 · Do Caos a Ordem 3 ·
+Roma 2 · Via Draconiana 2 · Ordem Não Identificada 1 · Ordo Baphometis 1 ·
+Order of Setne Khamuast 1 · Samael Aun Weor 1 · Temple Of Set 1.
+
+**Post-modern Satanism (sinister path) — 225 entries, 18 subfolders**:
+BTF 77 · BTF Plagio Temple of Black Light 49 · O9A 27 · - Outros 14 ·
+Chaos Magick 13 · Temple of Ascending Flame 12 · Tempel Ov The Black
+Vampire 7 · Temple Of The Black Light 4 · Falxifer 4 · Temple Ov Blood 3 ·
+Círculo Strigoi 2 · Projeto ZarZax 2 · Skull and Bones 1 · Misanthropic
+Luciferian Order 1 · Black Tower Publishing 1 · Ordem de Kurtludixs 1 ·
+Temple of the Vampire 5.
+
+**Magazines — 240 entries, 6 subfolders**: Lucifer Luciferax 229 ·
+Sitra Ahra 5 · Infernus 2 · Poemas 2 · Anti-Cósmica 1 · Via Sinistra 1.
+
+**To organize — 759 entries, 4 subfolders**: Auto Ajuda e Melhoria
+Pessoal 686 · escobar 9 · Curiosidades 7 · Procurar por 1.
+
+**Basic books — 11 entries**, no subfolders.
+
+## Book locations
+
+| Book | Sector | Subfolder | Entries in subfolder |
+| --- | --- | --- | ---: |
+| Book 1 | Traditional Satanism | Demonologia / Lilith | 60 (Demonologia) |
+
 ## Definitions
 
 - **Entry**: one file in the library, counted once, in exactly one sector.

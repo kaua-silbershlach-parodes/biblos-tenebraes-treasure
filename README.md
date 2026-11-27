@@ -8,7 +8,7 @@ published — only the totals and the sector structure. See
 
 The library is read one book at a time, smallest first. Each book becomes a
 set of technique cards in `corpus.json`, and the engine ranks those cards
-against a plain-words question. The first book is in: 12 techniques.
+against a plain-words question. The first book is in: 15 techniques.
 
 ## The engine
 
@@ -31,9 +31,10 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 
 ## Techniques from the first book — sector: Traditional Satanism
 
-The first book read comes from the **Traditional Satanism** sector:
+The first book read comes from the **Traditional Satanism** sector,
+subfolder **Demonologia / Lilith**:
 **177 entries in this sector, of 17,927 in the whole library (0.99%)**.
-Its 12 techniques:
+Its 15 techniques:
 
 **Frame the work**
 
