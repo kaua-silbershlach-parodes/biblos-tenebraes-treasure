@@ -23,29 +23,32 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 - `data/techniques.dmp` — the Oracle Data Pump dump with the embedding
   vectors already populated, so an import queries immediately. It carries
   two tables: `techniques` (the derived technique cards) and `book_chunks`
-  (**the whole first book converted**: every chunk of its 3 pages, 22
-  chunks, each with both model vectors), so the complete source is in the
-  dump, not only the derived cards.
+  (**the whole first book converted**: every chunk of its 3 pages, 46
+  sentence-level chunks, each with both model vectors), so the complete
+  source is in the dump, not only the derived cards.
 - `tests/run_engine_test.py` — known questions that must rank their
   technique first, under both models.
 
-## Techniques from the first book — sector: Traditional Satanism
+## Techniques from the first book — Traditional Satanism / Demonologia / Lilith
 
-The first book read comes from the **Traditional Satanism** sector,
-subfolder **Demonologia / Lilith**
-(`sectors/01-traditional-satanism/Demonologia/Lilith`):
-**177 entries in this sector, of 17,927 in the whole library (0.99%)**.
-Its 15 techniques:
+The first book read sits at the full path **Traditional Satanism →
+Demonologia → Lilith**
+(`sectors/01-traditional-satanism/Demonologia/Lilith`): the sector holds
+**177 entries of 17,927 in the whole library (0.99%)**, the Demonologia
+subfolder holds 60, and the Lilith sub-subfolder holds 17. Its 15
+techniques:
 
 **Frame the work**
 
 - Banishing Frame — open and close every working with a banishing.
+- Candlelit Space — the working space lit and set apart first.
 - Spoken Intention — state the intention aloud before any invocation.
 - Thanksgiving and Closure — gratitude first, then the final banishing.
 
 **Hold the circle**
 
 - Circle Formation — participants equidistant around the officiant.
+- Single Entry — each participant enters alone, one at a time.
 - Alternating Mantra — two voices exchanging the chant.
 - Sound as Trance Driver — drum, music, and chant carrying the state.
 
@@ -56,12 +59,17 @@ Its 15 techniques:
 - Sacred Language — words set apart for the central invocation.
 - Incorporation Signal — a clear mark for the moment of transition.
 - Cast Offering — a physical act repeated by each participant.
+- Separation Before Closure — the group separates before the final thanks.
 - Myth Study First — names, aspects, and history known beforehand.
 
 ## Verified
 
-- Local engine: 24/24 known questions rank their technique first, under
+- Local engine: 30/30 known questions rank their technique first, under
   both models.
+- Reading control (`tools/reading_control.py`): every one of the 46
+  chunks is mapped to a phase or declared, every card is supported by
+  its own provenance chunks, and every named tool appears in the chunks
+  its phase cites — PASS.
 - Full Oracle suite (`tests/run_full_suite_linux.py`, the same suite that
   verifies the writing engine): **14 PASS + 2 BLOCKED** on Oracle AI
   Database 26ai — exact and approximate search agree with the local engine
@@ -69,11 +77,11 @@ Its 15 techniques:
   distance metrics, Private AI container embeddings, CLIP text encoder,
   chunking, RAG retrieval, and ORDS REST all pass. The 2 BLOCKED are text
   generation: the running Private AI container serves no LLM.
-- The dump round-trips: import restores 12 rows with 12/12 non-null vector
-  pairs.
-- Whole-book search: over the 22 chunks of the complete first book, the
-  in-database top-10 equals the local engine's top-10 exactly under
-  MiniLM (4/4 reference queries). Under e5 the top-10 sets agree with
-  small order differences in the middle ranks, from runtime precision.
+- The dump round-trips: import restores the technique rows and all 46
+  book chunks with their vector pairs.
+- Whole-book search: over the 46 chunks of the complete first book, the
+  engine returns the exact passage with its chunk and page, and every
+  result carries the full path
+  `01-traditional-satanism/Demonologia/Lilith/book-1`.
 
 Copyright (c) A Elite Estrangeira.
