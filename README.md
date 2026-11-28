@@ -23,9 +23,9 @@ The same Oracle-powered engine used across A Elite Estrangeira projects:
 - `data/techniques.dmp` — the Oracle Data Pump dump with the embedding
   vectors already populated, so an import queries immediately. It carries
   two tables: `techniques` (all 141 derived technique cards) and `book_chunks`
-  (**the whole first book converted**: every chunk of its 3 pages, 46
-  sentence-level chunks, each with both model vectors), so the complete
-  source is in the dump, not only the derived cards.
+  (**all ten books converted**: 65,148 sentence-level chunks, each with
+  both model vectors), so the complete source is in the dump, not only
+  the derived cards. The dump is stored with Git LFS (216,969,216 bytes).
 - `tests/run_engine_test.py` — known questions that must rank their
   technique first, under both models.
 
@@ -228,8 +228,8 @@ The ten books, turned on the engine again:
   distance metrics, Private AI container embeddings, CLIP text encoder,
   chunking, RAG retrieval, and ORDS REST all pass. The 2 BLOCKED are text
   generation: the running Private AI container serves no LLM.
-- The dump round-trips: import restores all 141 technique rows and all 46
-  book chunks with their vector pairs (942,080 bytes).
+- The dump round-trips: import restores all 141 technique rows and all
+  65,148 book chunks across the ten books, with their vector pairs.
 - Whole-book search: over the 46 chunks of the complete first book, the
   engine returns the exact passage with its chunk and page, and every
   result carries the full path
