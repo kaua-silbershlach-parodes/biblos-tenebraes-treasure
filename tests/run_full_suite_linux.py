@@ -120,7 +120,7 @@ if n == 0:
         )
     conn.commit()
     n = run("SELECT COUNT(*) FROM techniques")[0][0]
-print(f"  techniques rows: {n} (expected 12)")
+print(f"  techniques rows: {n} (expected {len(corpus)})")
 
 models = {r[0] for r in run("SELECT model_name FROM user_mining_models")}
 for fname, mname in [
@@ -227,8 +227,8 @@ cur.execute(
        REJECT LIMIT UNLIMITED"""
 )
 n = attempt(lambda: run("SELECT COUNT(*) FROM tech_ext")[0][0])
-print(f"  external table rows: {n} (expected 12)")
-results["T2 external table"] = "PASS" if n == 12 else f"FAIL ({n})"
+print(f"  external table rows: {n} (expected {len(corpus)})")
+results["T2 external table"] = "PASS" if n == len(corpus) else f"FAIL ({n})"
 
 # ---------- T4: FETCH APPROX vs EXACT ----------
 show("T4 FETCH APPROX vs EXACT (q1, both models)")
